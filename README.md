@@ -42,6 +42,7 @@ New workflows land in [`shared/`](shared), one folder each. Newest first.
 
 | Workflow | Makes | Cloud | Local | Shared on |
 | --- | --- | --- | --- | --- |
+| [Halloween SD](shared/halloween-sd) | An 18 s vertical anime Halloween short where one character changes costume on every beat, from a 3D blockout and seven reference images (Seedance 2.5) | [Open](https://t.co/2pO0ixzDbu) | [JSON](shared/halloween-sd/halloween-sd_local.json) | [X](https://x.com/ComfyUI/status/2113682376815779899) |
 | [Haunted Subway](shared/haunted-subway) | A 21 s first-person horror short from a 3D blockout and four reference images (Seedance 2.5) | [Open](https://t.co/a2wZTjQGOJ) | [JSON](shared/haunted-subway/haunted-subway_local.json) | [X](https://x.com/ComfyUI/status/2115089830585704602) |
 
 ## 03 · Cloud and local versions
