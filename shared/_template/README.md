@@ -42,7 +42,6 @@ One or two sentences: what it makes and how. Name the model.
 | [SLUG_local.json](SLUG_local.json) | The workflow for Comfy Desktop or a local ComfyUI. |
 | [Open in Comfy Cloud](CLOUD_LINK) | The workflow on Comfy Cloud. Requires a Comfy account. |
 | [media/FILE](media/FILE) | A sample input. Say which input it fills. |
-| `media/screenshot-*.png` | Screenshots for this README. Not workflow inputs. |
 
 ## 03 · Run on Comfy Cloud
 
