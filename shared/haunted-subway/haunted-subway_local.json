@@ -1,0 +1,461 @@
+{
+  "id": "691b0f14-64df-4a9f-b3f5-411c37b942d7",
+  "revision": 0,
+  "last_node_id": 37,
+  "last_link_id": 41,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "SaveVideo",
+      "pos": [
+        1276.060518101235,
+        8122.252715025967
+      ],
+      "size": [
+        1496.23109745926,
+        1215.0410142731494
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "video/Seedance2.5_r2v",
+        "auto",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "video/Seedance2.5_r2v",
+        "format": "auto",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 24,
+      "type": "ByteDance2ReferenceNodeV2",
+      "pos": [
+        608.4427516192078,
+        8143.398924885403
+      ],
+      "size": [
+        562.2520584321608,
+        1074.6347521026548
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model.reference_images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "model.reference_images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "name": "model.reference_images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 40
+        },
+        {
+          "name": "model.reference_images.image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 41
+        },
+        {
+          "name": "model.reference_images.image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model.reference_videos.video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 39
+        },
+        {
+          "name": "model.reference_audios.audio_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "model.reference_assets.asset_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "draft_task_id",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ByteDance2ReferenceNodeV2"
+      },
+      "widgets_values": [
+        "Seedance 2.5",
+        "## Subject\n\nReference asset definitions — use these exact labels throughout the generation:\n\n\\- `image_1` — Young woman character turnaround sheet and Walkman reference: Use as the definitive character reference for the young woman whose eyes represent the first-person POV camera. This image establishes her identity, body proportions, clothing, accessories, and Walkman design. She is a young woman in her early 20s with shoulder-length, slightly messy dark brown hair, soft facial features, brown eyes, and a natural, understated appearance. She wears an oversized acid-wash denim jacket over a faded white T-shirt, high-waisted light blue jeans, worn white sneakers, silver bracelets, and a wristwatch. Her vintage silver-and-blue Sony cassette Walkman has wired headphones.\n\nImportant: `image_1` is a character and wardrobe reference, NOT a camera-framing reference. The young woman's face, head, or full body must never be shown because the entire video takes place through her eyes. Only the parts of her body naturally visible from first-person perspective, such as her hands, forearms, denim sleeves, waist, lap, and upper legs, may enter the frame when appropriate to `video_1`. Preserve her clothing, accessories, and Walkman exactly as established in `image_1`. Do not recreate the turnaround sheet itself or introduce any third-person character shots.\n\n\\- `image_2` — Subway interior and passengers reference: Use as the primary reference for the 1985 New York subway car, including orange-yellow molded seats, stainless-steel poles, fluorescent ceiling lights, graffiti, advertisements, dark windows, and tired late-night commuters.\n\n\\- `image_3` — Additional subway interior and passengers reference: Use alongside `image_2` to establish the subway's atmosphere, authentic 1980s passenger wardrobe, interior materials, lighting, environmental wear, and photographic realism.\n\n\\- `image_4` — Eyeless elderly woman turnaround sheet: Use as the definitive identity and appearance reference for the elderly woman. Preserve her facial structure, curly gray hair, wrinkles, maroon cardigan, floral dress, body proportions, handbag, and distinctive eyeless appearance. She has dark, hollow eye cavities with no visible eyeballs, pupils, or irises. Follow the turnaround sheet for consistent facial anatomy and character identity across every appearance.\n\n\\- `video_1` — 21-second 3D blockout video: This is the definitive reference for all first-person POV camera movement, viewing angles, shot order, action beats, lighting blackouts, character positions, spatial continuity, reveal timing, final framing, and total duration. Match the existing animation and pacing exactly.\n\nThe scene takes place inside a half-full New York City subway car late at night in 1985.\n\nThe entire film is experienced through the eyes of the young woman established in `image_1`.\n\nThe young woman is never seen externally. Her identity is communicated only through the visible portions of her clothing, her hands and lap when shown by the blockout, her Walkman, her breathing, and her first-person camera movements.\n\nThe elderly woman is the central horror character, matching `image_4`. She is slightly hunched, carries a black leather handbag, and maintains a deeply disturbing smile. Her missing eyes create a sinister, uncanny appearance without excessive gore.\n\n## Action\n\nThe supplied 21-second `video_1` 3D blockout is the absolute authority for all animation, action timing, character placement, first-person camera movement, blackouts, and scene transitions.\n\nReproduce the exact sequence of events established in `video_1`. Do not create a new interpretation of the scene or redistribute its timing.\n\nThe following descriptions establish narrative content, visual identity, audio, and performance only. They must fit within the existing blockout choreography without introducing new action beats or changing the pacing.\n\n### Opening — First-person POV inside the subway\n\nBegin at the exact camera position, orientation, and framing established in the opening of `video_1`.\n\nThe camera is positioned at the young woman's natural seated eye level, representing her eyes.\n\nDo not use the composition of `image_1` as the opening camera shot. The image is strictly a reference for the woman, her clothing, accessories, and Walkman.\n\nFollow the exact opening POV movement from `video_1`.\n\nWhen her hands, waist, lap, or legs become visible in the blockout, they must match the woman's appearance from `image_1`.\n\nHer jeans are high-waisted light blue denim, and her sleeves are made from the same oversized acid-wash jacket shown in her turnaround sheet.\n\nHer silver bracelets and wristwatch remain consistent whenever visible.\n\nThe vintage Sony Walkman must match the silver-and-blue device shown in `image_1`, including its cassette window, buttons, proportions, and headphone cable.\n\nThe Walkman should appear only where it naturally belongs according to the blockout. Do not introduce extra shots or camera movements to show it.\n\nThe subway rocks subtly as it travels through the tunnel. Overhead fluorescent lights illuminate the worn interior.\n\nThe surrounding subway environment, passengers, clothing, and lighting match `image_2` and `image_3`.\n\nFollow `video_1` exactly as the camera moves through the opening sequence.\n\n### First blackout — Completely empty subway\n\nThe fluorescent lights begin flickering according to `video_1`.\n\nAs the lights start to fail, the young woman begins breathing slightly heavier.\n\nHer breathing becomes subtly nervous and panicked, as though she realizes something is wrong.\n\nThe breathing remains natural and restrained, without exaggerated panting or added camera movements.\n\nThe car falls into complete darkness, with only the tiny red indicator light on the Walkman remaining visible during the initial blackout, if within the established framing of `video_1`.\n\nWhen the lights return, every passenger has vanished.\n\nThe entire subway car is completely empty. There is absolutely nobody visible anywhere in the subway, including the far end of the car. The elderly woman has not appeared yet.\n\nThe POV camera follows the exact left, right, and forward head movements established in `video_1`.\n\nAs the young woman looks around, she sees only empty seats, vacant aisles, steel poles, and the deserted subway interior.\n\nEvery direction she looks is completely devoid of people.\n\nDo not introduce the elderly woman, silhouettes, figures, or any passengers during this searching sequence.\n\nThe young woman's breathing remains slightly elevated, conveying growing anxiety without interrupting the existing camera animation.\n\nThe young woman's gaze returns straight ahead and pauses, exactly as established in `video_1`.\n\nShe remains facing forward, looking into the empty car.\n\nOnly after she has stopped looking around and is holding this forward-facing pause does a loud, dry, maniacal elderly woman's laugh suddenly echo from the far end of the subway.\n\nThe laughter breaks the silence.\n\n### The elderly woman's first appearance — Turn to the right\n\nAfter hearing the laugh, the young woman turns her head to the right, following the exact camera turn established in `video_1`.\n\nOnly as the camera turns right does the elderly woman become visible.\n\nAt the very last seat toward the far end of the subway car, on the right side of the viewer's perspective, sits the elderly woman in her maroon cardigan, her black handbag resting on her lap.\n\nHer appearance matches the turnaround sheet in `image_4`.\n\nHer face has the same hollow, eyeless appearance shown in `image_4`.\n\nShe smiles directly toward the viewer.\n\nHer smile is unnerving but anatomically realistic, with deep wrinkles around her mouth and cheeks.\n\nShe remains still, her empty eye cavities oriented directly toward the POV camera.\n\nThe order is essential: empty subway → look around with nobody visible → return to a straight-ahead view → pause → hear the elderly woman's laugh → turn right → discover her sitting at the far end of the subway.\n\nThe elderly woman must not appear before the rightward turn reveals her.\n\n### Successive blackouts — The elderly woman approaches\n\nFollow the exact lighting interruptions, appearance positions, and reveal timing in `video_1`.\n\nDuring each blackout, the elderly woman's position changes instantaneously while the screen is completely dark.\n\nWhen the lights return, she is already in her next established position.\n\nHer progression follows the blockout:\n\n- First, seated at the far end of the car on the right, revealed after the laugh.\n- Then, seated in the middle of the car.\n- Then, seated directly across the aisle.\n- Finally, appearing inches away from the viewer's face.\n\nThese are not new shots or independently timed sequences. They are visual descriptions of the existing blockout events.\n\nThe elderly woman never visibly walks, slides, or moves between these locations.\n\nShe maintains the same recognizable appearance, hollow eye cavities, maroon cardigan, floral dress, handbag, and disturbing smile.\n\nHer facial appearance must remain consistent with `image_4` throughout every reveal.\n\nThe young woman's breathing remains slightly tense and frightened, without introducing any independent movement outside the blockout.\n\nDo not add extra blackouts, additional appearances, or intermediate positions.\n\n### Final close-up — Sudden gasp, super deep dialogue, and reaching hand\n\nAt the precise moment established by `video_1`, the lights return to reveal the elderly woman's face extremely close to the first-person camera.\n\nHer face fills the frame.\n\nHer appearance precisely matches `image_4`.\n\nHer eyes are completely absent. Her eye cavities are dark and hollow, with no visible eyeballs, pupils, or irises.\n\nThe hollow cavities are naturally integrated into her facial anatomy with realistic surrounding wrinkles and shadow depth.\n\nShe is smiling broadly, facing directly toward the viewer.\n\nHer expression is deeply unsettling. Despite her smile, there is unmistakable menace in her face.\n\nAt the instant she suddenly appears inches from the viewer's face, the young woman releases a sharp, involuntary gasp of fear.\n\nThe gasp is brief, realistic, and instinctive.\n\nIt ends quickly, allowing the elderly woman's dialogue to begin clearly without overlapping speech.\n\nDo not add any independent camera recoil unless one already exists in `video_1`.\n\nOne of the elderly woman's aged, wrinkled hands is already reaching toward the viewer's throat, as though she is about to grasp the person behind the POV camera by the neck.\n\nHer fingers are slightly curled, with natural spacing between them. Her arm remains physically connected to her shoulder, and the reaching gesture respects realistic anatomy.\n\nHer hand enters the near foreground from below, reaching toward the implied neck position just beneath the camera.\n\nShe slowly curls her fingers into a possessive grasp, keeping her face clearly visible behind the hand.\n\nThe gesture is deliberate and frightening, but there is no violent shaking, strangling, or exaggerated movement.\n\nMaintain the existing final camera framing and movement from `video_1` without adding any new recoil, camera push, or character repositioning.\n\nThe reaching gesture must fit naturally inside the final shot already established by the blockout.\n\n### Spoken language lock — Highest priority for dialogue\n\nALL SPOKEN DIALOGUE MUST BE IN NATIVE AMERICAN ENGLISH (en-US).\n\nThe elderly woman speaks exclusively in clear, fluent American English, with natural American pronunciation and a subtle New York accent appropriate to 1985.\n\nShe must speak the exact English dialogue written below, word for word.\n\nNo translation, paraphrasing, improvised speech, or additional dialogue.\n\nNo Mandarin, Cantonese, Chinese, or any other non-English language.\n\nNo invented syllables, gibberish, unintelligible growling, or incomprehensible vocalizations.\n\nThe elderly woman's laugh is nonverbal. The young woman's breathing and gasp are also nonverbal.\n\nThe elderly woman begins speaking in an extremely deep, resonant, supernatural, menacing American English voice, while maintaining her disturbing smile throughout.\n\nHer voice is already super deep when she begins the first word.\n\nThere is no gradual pitch change.\n\nThe entire line is delivered in the same unnaturally deep register.\n\nHer tone is deliberately threatening, possessive, and disturbing.\n\nShe sounds genuinely fascinated by the viewer's eyes and completely serious about wanting them.\n\nExact spoken dialogue — Elderly woman:\n\n“I bet you have pretty eyes... I'll take good care of them.”\n\nHer voice should be extraordinarily deep, dark, resonant, and threatening, with supernatural bass resonance, but her English pronunciation must remain completely natural and clearly intelligible.\n\nPreserve accurate American English consonants, vowels, speech rhythm, and precise lip synchronization.\n\nThe words “I'll take good care of them” are delivered with particularly disturbing, possessive emphasis, without changing the overall depth of her voice.\n\nAs she delivers those final words, her extended fingers curl slightly closer toward the viewer's neck.\n\nHer smile never disappears.\n\nThe contrast between her friendly-looking grin, completely absent eyes, hollow eye cavities, unnaturally deep voice, and possessive reaching hand creates the horror.\n\nHer face must not distort, stretch, or transform.\n\nPreserve her identity, wrinkles, skin texture, smile, hair, and costume exactly as established in `image_4`.\n\n### Final ending — Awkward smiling stare with no eyes\n\nAfter finishing the dialogue, the elderly woman remains extremely close to the POV camera.\n\nHer eyes remain completely absent.\n\nHer hollow eye cavities face directly toward the viewer.\n\nHer hand remains near the viewer's throat, with the fingers partially curled as though she is maintaining a gentle but threatening grasp.\n\nShe continues smiling with the same sinister expression.\n\nShe holds a prolonged, uncomfortable, awkward, unblinking stare toward the viewer, despite having no eyes.\n\nShe remains almost completely still, maintaining the disturbing smile.\n\nThere is no additional dialogue, sudden attack, exaggerated facial change, or extra movement.\n\nThe subway continues its subtle background vibration.\n\nThe scene remains on her smiling, eyeless face and reaching hand until the 21-second video ends.\n\nDo not cut to black, fade out, or introduce any additional ending.\n\nThe existing `video_1` blockout controls the exact duration of the dialogue and remaining stare. Do not lengthen the final performance by shortening earlier events.\n\n## Camera\n\nSTRICT FIRST-PERSON POV. THE CAMERA IS THE YOUNG WOMAN'S EYES THROUGHOUT THE ENTIRE VIDEO.\n\nUse `video_1` as the definitive camera animation reference.\n\nReproduce its camera animation as closely as possible, including the exact camera path, timing, viewpoint, height, orientation, framing, head turns, pauses, blackout alignment, and final close-up.\n\n`image_1` must never be interpreted as a camera reference or opening shot.\n\nIt is strictly the young woman's identity, clothing, accessories, body proportions, and Walkman reference.\n\nDo not generate third-person shots of the woman, show her full body, show her face, or recreate her turnaround sheet during the video.\n\nThe camera remains at her natural eye height and follows the exact first-person orientation established by `video_1`.\n\nWhen her waist, lap, thighs, knees, hands, denim sleeves, or accessories become visible, they must match the young woman shown in `image_1`.\n\nAny visible clothing must respect realistic body positioning and the actual first-person framing.\n\nThe opening camera composition must be determined exclusively by `video_1`.\n\nSubsequent camera views preserve the original subway layout and exact perspectives established by `video_1`, using `image_2` and `image_3` for environmental appearance.\n\nDuring the empty-car sequence, the camera must complete the existing look-around movement while the entire subway is visibly unoccupied.\n\nAfter the searching movement, the camera returns to its straight-ahead orientation and pauses.\n\nThe elderly woman's laugh begins during this forward-facing pause.\n\nOnly after the laugh does the POV camera turn to the right, revealing the elderly woman seated at the far end of the subway.\n\nDo not reveal her early, place her in the straight-ahead view, or have her appear while the young woman is still looking around.\n\nThe approaching elderly woman is subsequently revealed using the same angles, shot sizes, distances, and framing already present in `video_1`.\n\nHer design and facial anatomy must match `image_4` at every distance.\n\nThe final close-up is an extreme first-person confrontation, with the elderly woman's face inches from the viewer.\n\nHer empty eye cavities and disturbing smile are clearly visible during the dialogue and final stare.\n\nHer reaching hand appears close to the lower foreground, creating realistic depth separation between her fingers and her face.\n\nThe reaching gesture must be directed toward the first-person viewer's throat, not toward an imaginary person elsewhere in the carriage.\n\nDo not independently introduce camera pushes, dramatic zooms, handheld shaking, additional head turns, lens changes, or new coverage.\n\nAny natural train vibration or subtle body movement must remain secondary to the existing camera animation.\n\nPreserve spatial continuity across every blackout.\n\nThe camera should feel like a real human seated inside the subway car, but the blockout's actual camera animation must always take priority over simulated naturalism.\n\n## Style\n\nKodak Vision3 500T 5219 film stock.\n\nRecreate the atmosphere of gritty late-night New York subway photography from 1985, using the supplied reference images for lighting, materials, period authenticity, costume, and visual texture.\n\nDense organic film grain, subtle halation around fluorescent ceiling lights, soft analog contrast, muted cyan-green fluorescent illumination, worn orange-yellow seating, subdued maroon clothing, deep greenish-black shadows, and naturally imperfect skin textures.\n\nThe subway should feel physically real and aged, with scratched metal poles, dirty windows, faded plastic seats, period advertisements, and authentic graffiti.\n\nMatch the young woman's clothing, physical characteristics, and Walkman design from `image_1` whenever these elements are visible from the first-person perspective.\n\nDo not reproduce the white studio background or turnaround-sheet composition from `image_1`.\n\nMatch the subway environments and passenger appearances in `image_2` and `image_3`.\n\nMatch the elderly woman's identity, wardrobe, posture, and eyeless facial design in `image_4`.\n\nMaintain realistic fluorescent light behavior throughout the scene.\n\nDuring blackouts, visibility drops to absolute black, except for the small Walkman indicator during the initial blackout when visible within the blockout's framing.\n\nWhen the lights return, the environment's reflections, shadows, and color temperature remain consistent.\n\nThe elderly woman should closely match the supplied turnaround sheet, retaining her curly gray hair, facial wrinkles, maroon cardigan, floral dress, lace collar, handbag, and completely absent eyes.\n\nHer smile is disturbing because of its persistence and the threatening intent behind it, not because of exaggerated supernatural facial distortion.\n\nHer empty eye cavities should appear realistically integrated into her face, with natural shadow depth and consistent surrounding skin texture.\n\nHer reaching hand should look physically real, with thin aged skin, visible tendons, natural knuckle movement, slight trembling, and realistic finger articulation.\n\nNo glowing eyes, exaggerated CGI effects, or unnecessary gore.\n\nHer super deep voice should feel profoundly unnatural and menacing, almost abyssal, but still clean, intelligible, and unmistakably American English.\n\nThe entire dialogue must maintain the same unnaturally deep register from beginning to end.\n\nMaintain a claustrophobic, grounded psychological-horror atmosphere.\n\n## Constraints\n\nBlockout fidelity and timing\n\n- Total video duration: exactly 21 seconds.\n- Primary video reference: `video_1`.\n- The supplied 21-second 3D blockout controls the entire temporal structure.\n- Follow its exact shot order, camera positions, camera movements, movement speed, lighting changes, blackout lengths, reveal timing, character placement, and final framing.\n- Do not create a separate action timeline based on this prompt.\n- Do not evenly distribute time between narrative phases.\n- Do not add or extend pauses, character actions, or transitions beyond the existing blockout.\n- Do not accelerate earlier events to create additional time for dialogue.\n- Do not independently stretch the scene to accommodate 21 seconds.\n- Treat the blockout as the animation foundation and this prompt as a visual and performance enhancement.\n- The reaching gesture is a localized performance enhancement within the existing final close-up, not an additional scene.\n- If the existing final shot provides insufficient time for the gesture, minimize the hand movement instead of changing the blockout's camera animation or duration.\n- The young woman's heavier breathing and final gasp must fit naturally into the existing blockout without retiming any shot.\n\nReference fidelity\n\n- `image_1`: Young woman's character identity, body proportions, hairstyle, denim jacket, faded white T-shirt, jeans, shoes, bracelets, wristwatch, and vintage silver-and-blue Sony Walkman. Use only the body parts naturally visible from first-person POV. Never use this image to establish camera framing.\n- `image_2`: 1985 subway interior, initial passengers, worn surfaces, lighting, and period details.\n- `image_3`: Additional subway and passenger reference, environmental materials, clothing, and photographic atmosphere.\n- `image_4`: Definitive turnaround sheet for the elderly woman's identity, costume, body proportions, smile, and hollow, eyeless facial anatomy.\n- `video_1`: Definitive 21-second reference for camera animation, scene timing, blocking, blackouts, and ending.\n\nFirst-person POV and empty-car reveal\n\n- Maintain strict first-person POV throughout.\n- The young woman is never externally visible.\n- No third-person shots, external camera angles, over-the-shoulder replacements, reflections revealing her face, or views of her full body.\n- Only her hands, arms, clothing, waist, lap, or legs may appear naturally when the existing blockout framing reveals them.\n- After the first blackout, the subway must be completely empty in every direction.\n- The elderly woman must not be visible during the initial look-around.\n- The POV returns straight ahead and pauses before the laugh.\n- The elderly woman's laugh begins while the camera is facing forward.\n- The camera then turns right to reveal the elderly woman at the far end.\n- Camera movement must reproduce `video_1` rather than invent new movements.\n\nCharacter and environmental continuity\n\n- Preserve the young woman's exact clothing, accessories, body proportions, and Walkman from `image_1`.\n- Preserve the elderly woman's exact facial identity, hair, clothing, posture, handbag, persistent smile, and missing eyes according to `image_4`.\n- Maintain identical subway architecture and layout across all illuminated moments.\n- No additional passengers after the initial disappearance.\n- All subsequent elderly-woman positional changes occur exclusively during blackouts.\n- No visible walking or teleportation effects.\n- Maintain realistic lighting direction, coherent shadows, and environmental continuity.\n\nFinal reaching gesture\n\n- During the last blackout, the elderly woman assumes her final established position.\n- When the lights return, one of her hands is already partially extended toward the POV viewer's neck.\n- Her fingers are naturally curled, as though she is about to grasp the viewer's throat.\n- The fingers may tighten slightly during the dialogue.\n- Keep her arm physically connected to her body, with realistic joint movement.\n- Her hand must not obscure her entire face or hollow eye cavities.\n- Do not introduce a new attack sequence, violent struggling, choking animation, or camera recoil.\n- The gesture must remain secondary to the existing final close-up and dialogue.\n\nAudio and dialogue performance\n\n- SPOKEN LANGUAGE: NATIVE AMERICAN ENGLISH (en-US) ONLY.\n- The elderly woman's only spoken line is: “I bet you have pretty eyes... I'll take good care of them.”\n- Speak the line word for word exactly as written.\n- No Mandarin, Cantonese, Chinese, or any other non-English speech.\n- No translation, paraphrasing, gibberish, invented syllables, or additional phrases.\n- The entire line must be delivered in a super deep voice from the first word to the last.\n- The voice is extremely low, dark, resonant, menacing, supernatural, and almost inhuman, but still clearly intelligible and distinctly American English.\n- There is no progressive deepening or gradual pitch shift. The voice begins super deep and remains super deep throughout.\n- Give “I'll take good care of them” a more possessive, threatening emphasis without changing the established vocal depth.\n- Maintain a broad, disturbing smile throughout the entire dialogue.\n- The elderly woman has no visible eyeballs, pupils, or irises. Her empty eye cavities match `image_4`.\n- Preserve accurate lip synchronization and intelligible English speech.\n- Her vocal delivery must fit inside the existing `video_1` final performance window.\n- The elderly woman's laugh is nonverbal.\n- When the lights begin to fail, the young woman starts breathing a little heavier, slightly panicked.\n- When the elderly woman is suddenly inches from her face, the young woman gives a brief, involuntary gasp.\n- No additional speech or improvised dialogue.\n\nFinal frame\n\n- Remain on the elderly woman's face after the dialogue.\n- Her eyes remain completely absent.\n- Her hollow eye cavities remain visible.\n- Maintain her sinister smile and intensely awkward stare.\n- Her hand remains extended near the viewer's neck.\n- Preserve the final camera position and framing from `video_1`.\n- No sudden movement, additional attack, or disappearance.\n- No cut to black.\n- No fade-out.\n- No additional final shot.\n- End directly on the held smiling stare at the end of the 21-second blockout.\n\nNegative prompts\n\nNo third-person views of the young woman, no visible face or full-body shots of the POV character, no recreation of the young woman's turnaround sheet, no white studio background, no opening camera composition derived from `image_1`, no modern subway elements, no smartphones, no contemporary digital screens, no modern advertisements, no visible teleportation, no glowing eyes, no monster transformation, no exaggerated CGI smile, no facial warping, no identity changes, no duplicated objects, no extra limbs or fingers, no detached hands, no incorrect anatomy, no lighting inconsistencies, no changing subway geometry, no camera jumps, no invented angles, no additional character movements, no premature appearance of the elderly woman, no background passengers after the first blackout, no restored eyeballs, no visible pupils or irises, no excessive gore, no subtitles, no captions, no text overlays, no non-English dialogue, no added dialogue, no excessive sound effects, no exaggerated horror stingers, no artificial motion artifacts, no extra shots, no altered event order, and no changes to the established 21-second 3D blockout timing.\n\nHighest-priority instruction: `video_1` is the definitive 21-second motion, camera, and timing blueprint. `image_1` establishes the young woman's identity, clothing, body proportions, accessories, and Walkman only; it must never dictate the opening framing or cause the woman to appear on camera. `image_2` and `image_3` control the subway environment and passengers, while `image_4` controls the eyeless elderly woman's design. Preserve the exact empty-car search, forward-facing pause, laughter, rightward reveal, successive blackouts, and final close-up. During the final confrontation, the elderly woman's hand reaches toward the POV viewer's neck while she delivers the exact line “I bet you have pretty eyes... I'll take good care of them” in clear American English with an extremely deep, menacing voice. The young woman breathes slightly heavier as the lights fail and gasps when the old woman appears inches from her face. End on the elderly woman's prolonged, awkward smile and hollow-eyed stare without cutting to black.",
+        "720p",
+        "16:9",
+        21,
+        true,
+        "reference",
+        "mp4",
+        true,
+        false,
+        459506062,
+        "randomize",
+        false
+      ],
+      "widgets_values_named": {
+        "model": "Seedance 2.5",
+        "model.prompt": "## Subject\n\nReference asset definitions — use these exact labels throughout the generation:\n\n\\- `image_1` — Young woman character turnaround sheet and Walkman reference: Use as the definitive character reference for the young woman whose eyes represent the first-person POV camera. This image establishes her identity, body proportions, clothing, accessories, and Walkman design. She is a young woman in her early 20s with shoulder-length, slightly messy dark brown hair, soft facial features, brown eyes, and a natural, understated appearance. She wears an oversized acid-wash denim jacket over a faded white T-shirt, high-waisted light blue jeans, worn white sneakers, silver bracelets, and a wristwatch. Her vintage silver-and-blue Sony cassette Walkman has wired headphones.\n\nImportant: `image_1` is a character and wardrobe reference, NOT a camera-framing reference. The young woman's face, head, or full body must never be shown because the entire video takes place through her eyes. Only the parts of her body naturally visible from first-person perspective, such as her hands, forearms, denim sleeves, waist, lap, and upper legs, may enter the frame when appropriate to `video_1`. Preserve her clothing, accessories, and Walkman exactly as established in `image_1`. Do not recreate the turnaround sheet itself or introduce any third-person character shots.\n\n\\- `image_2` — Subway interior and passengers reference: Use as the primary reference for the 1985 New York subway car, including orange-yellow molded seats, stainless-steel poles, fluorescent ceiling lights, graffiti, advertisements, dark windows, and tired late-night commuters.\n\n\\- `image_3` — Additional subway interior and passengers reference: Use alongside `image_2` to establish the subway's atmosphere, authentic 1980s passenger wardrobe, interior materials, lighting, environmental wear, and photographic realism.\n\n\\- `image_4` — Eyeless elderly woman turnaround sheet: Use as the definitive identity and appearance reference for the elderly woman. Preserve her facial structure, curly gray hair, wrinkles, maroon cardigan, floral dress, body proportions, handbag, and distinctive eyeless appearance. She has dark, hollow eye cavities with no visible eyeballs, pupils, or irises. Follow the turnaround sheet for consistent facial anatomy and character identity across every appearance.\n\n\\- `video_1` — 21-second 3D blockout video: This is the definitive reference for all first-person POV camera movement, viewing angles, shot order, action beats, lighting blackouts, character positions, spatial continuity, reveal timing, final framing, and total duration. Match the existing animation and pacing exactly.\n\nThe scene takes place inside a half-full New York City subway car late at night in 1985.\n\nThe entire film is experienced through the eyes of the young woman established in `image_1`.\n\nThe young woman is never seen externally. Her identity is communicated only through the visible portions of her clothing, her hands and lap when shown by the blockout, her Walkman, her breathing, and her first-person camera movements.\n\nThe elderly woman is the central horror character, matching `image_4`. She is slightly hunched, carries a black leather handbag, and maintains a deeply disturbing smile. Her missing eyes create a sinister, uncanny appearance without excessive gore.\n\n## Action\n\nThe supplied 21-second `video_1` 3D blockout is the absolute authority for all animation, action timing, character placement, first-person camera movement, blackouts, and scene transitions.\n\nReproduce the exact sequence of events established in `video_1`. Do not create a new interpretation of the scene or redistribute its timing.\n\nThe following descriptions establish narrative content, visual identity, audio, and performance only. They must fit within the existing blockout choreography without introducing new action beats or changing the pacing.\n\n### Opening — First-person POV inside the subway\n\nBegin at the exact camera position, orientation, and framing established in the opening of `video_1`.\n\nThe camera is positioned at the young woman's natural seated eye level, representing her eyes.\n\nDo not use the composition of `image_1` as the opening camera shot. The image is strictly a reference for the woman, her clothing, accessories, and Walkman.\n\nFollow the exact opening POV movement from `video_1`.\n\nWhen her hands, waist, lap, or legs become visible in the blockout, they must match the woman's appearance from `image_1`.\n\nHer jeans are high-waisted light blue denim, and her sleeves are made from the same oversized acid-wash jacket shown in her turnaround sheet.\n\nHer silver bracelets and wristwatch remain consistent whenever visible.\n\nThe vintage Sony Walkman must match the silver-and-blue device shown in `image_1`, including its cassette window, buttons, proportions, and headphone cable.\n\nThe Walkman should appear only where it naturally belongs according to the blockout. Do not introduce extra shots or camera movements to show it.\n\nThe subway rocks subtly as it travels through the tunnel. Overhead fluorescent lights illuminate the worn interior.\n\nThe surrounding subway environment, passengers, clothing, and lighting match `image_2` and `image_3`.\n\nFollow `video_1` exactly as the camera moves through the opening sequence.\n\n### First blackout — Completely empty subway\n\nThe fluorescent lights begin flickering according to `video_1`.\n\nAs the lights start to fail, the young woman begins breathing slightly heavier.\n\nHer breathing becomes subtly nervous and panicked, as though she realizes something is wrong.\n\nThe breathing remains natural and restrained, without exaggerated panting or added camera movements.\n\nThe car falls into complete darkness, with only the tiny red indicator light on the Walkman remaining visible during the initial blackout, if within the established framing of `video_1`.\n\nWhen the lights return, every passenger has vanished.\n\nThe entire subway car is completely empty. There is absolutely nobody visible anywhere in the subway, including the far end of the car. The elderly woman has not appeared yet.\n\nThe POV camera follows the exact left, right, and forward head movements established in `video_1`.\n\nAs the young woman looks around, she sees only empty seats, vacant aisles, steel poles, and the deserted subway interior.\n\nEvery direction she looks is completely devoid of people.\n\nDo not introduce the elderly woman, silhouettes, figures, or any passengers during this searching sequence.\n\nThe young woman's breathing remains slightly elevated, conveying growing anxiety without interrupting the existing camera animation.\n\nThe young woman's gaze returns straight ahead and pauses, exactly as established in `video_1`.\n\nShe remains facing forward, looking into the empty car.\n\nOnly after she has stopped looking around and is holding this forward-facing pause does a loud, dry, maniacal elderly woman's laugh suddenly echo from the far end of the subway.\n\nThe laughter breaks the silence.\n\n### The elderly woman's first appearance — Turn to the right\n\nAfter hearing the laugh, the young woman turns her head to the right, following the exact camera turn established in `video_1`.\n\nOnly as the camera turns right does the elderly woman become visible.\n\nAt the very last seat toward the far end of the subway car, on the right side of the viewer's perspective, sits the elderly woman in her maroon cardigan, her black handbag resting on her lap.\n\nHer appearance matches the turnaround sheet in `image_4`.\n\nHer face has the same hollow, eyeless appearance shown in `image_4`.\n\nShe smiles directly toward the viewer.\n\nHer smile is unnerving but anatomically realistic, with deep wrinkles around her mouth and cheeks.\n\nShe remains still, her empty eye cavities oriented directly toward the POV camera.\n\nThe order is essential: empty subway → look around with nobody visible → return to a straight-ahead view → pause → hear the elderly woman's laugh → turn right → discover her sitting at the far end of the subway.\n\nThe elderly woman must not appear before the rightward turn reveals her.\n\n### Successive blackouts — The elderly woman approaches\n\nFollow the exact lighting interruptions, appearance positions, and reveal timing in `video_1`.\n\nDuring each blackout, the elderly woman's position changes instantaneously while the screen is completely dark.\n\nWhen the lights return, she is already in her next established position.\n\nHer progression follows the blockout:\n\n- First, seated at the far end of the car on the right, revealed after the laugh.\n- Then, seated in the middle of the car.\n- Then, seated directly across the aisle.\n- Finally, appearing inches away from the viewer's face.\n\nThese are not new shots or independently timed sequences. They are visual descriptions of the existing blockout events.\n\nThe elderly woman never visibly walks, slides, or moves between these locations.\n\nShe maintains the same recognizable appearance, hollow eye cavities, maroon cardigan, floral dress, handbag, and disturbing smile.\n\nHer facial appearance must remain consistent with `image_4` throughout every reveal.\n\nThe young woman's breathing remains slightly tense and frightened, without introducing any independent movement outside the blockout.\n\nDo not add extra blackouts, additional appearances, or intermediate positions.\n\n### Final close-up — Sudden gasp, super deep dialogue, and reaching hand\n\nAt the precise moment established by `video_1`, the lights return to reveal the elderly woman's face extremely close to the first-person camera.\n\nHer face fills the frame.\n\nHer appearance precisely matches `image_4`.\n\nHer eyes are completely absent. Her eye cavities are dark and hollow, with no visible eyeballs, pupils, or irises.\n\nThe hollow cavities are naturally integrated into her facial anatomy with realistic surrounding wrinkles and shadow depth.\n\nShe is smiling broadly, facing directly toward the viewer.\n\nHer expression is deeply unsettling. Despite her smile, there is unmistakable menace in her face.\n\nAt the instant she suddenly appears inches from the viewer's face, the young woman releases a sharp, involuntary gasp of fear.\n\nThe gasp is brief, realistic, and instinctive.\n\nIt ends quickly, allowing the elderly woman's dialogue to begin clearly without overlapping speech.\n\nDo not add any independent camera recoil unless one already exists in `video_1`.\n\nOne of the elderly woman's aged, wrinkled hands is already reaching toward the viewer's throat, as though she is about to grasp the person behind the POV camera by the neck.\n\nHer fingers are slightly curled, with natural spacing between them. Her arm remains physically connected to her shoulder, and the reaching gesture respects realistic anatomy.\n\nHer hand enters the near foreground from below, reaching toward the implied neck position just beneath the camera.\n\nShe slowly curls her fingers into a possessive grasp, keeping her face clearly visible behind the hand.\n\nThe gesture is deliberate and frightening, but there is no violent shaking, strangling, or exaggerated movement.\n\nMaintain the existing final camera framing and movement from `video_1` without adding any new recoil, camera push, or character repositioning.\n\nThe reaching gesture must fit naturally inside the final shot already established by the blockout.\n\n### Spoken language lock — Highest priority for dialogue\n\nALL SPOKEN DIALOGUE MUST BE IN NATIVE AMERICAN ENGLISH (en-US).\n\nThe elderly woman speaks exclusively in clear, fluent American English, with natural American pronunciation and a subtle New York accent appropriate to 1985.\n\nShe must speak the exact English dialogue written below, word for word.\n\nNo translation, paraphrasing, improvised speech, or additional dialogue.\n\nNo Mandarin, Cantonese, Chinese, or any other non-English language.\n\nNo invented syllables, gibberish, unintelligible growling, or incomprehensible vocalizations.\n\nThe elderly woman's laugh is nonverbal. The young woman's breathing and gasp are also nonverbal.\n\nThe elderly woman begins speaking in an extremely deep, resonant, supernatural, menacing American English voice, while maintaining her disturbing smile throughout.\n\nHer voice is already super deep when she begins the first word.\n\nThere is no gradual pitch change.\n\nThe entire line is delivered in the same unnaturally deep register.\n\nHer tone is deliberately threatening, possessive, and disturbing.\n\nShe sounds genuinely fascinated by the viewer's eyes and completely serious about wanting them.\n\nExact spoken dialogue — Elderly woman:\n\n“I bet you have pretty eyes... I'll take good care of them.”\n\nHer voice should be extraordinarily deep, dark, resonant, and threatening, with supernatural bass resonance, but her English pronunciation must remain completely natural and clearly intelligible.\n\nPreserve accurate American English consonants, vowels, speech rhythm, and precise lip synchronization.\n\nThe words “I'll take good care of them” are delivered with particularly disturbing, possessive emphasis, without changing the overall depth of her voice.\n\nAs she delivers those final words, her extended fingers curl slightly closer toward the viewer's neck.\n\nHer smile never disappears.\n\nThe contrast between her friendly-looking grin, completely absent eyes, hollow eye cavities, unnaturally deep voice, and possessive reaching hand creates the horror.\n\nHer face must not distort, stretch, or transform.\n\nPreserve her identity, wrinkles, skin texture, smile, hair, and costume exactly as established in `image_4`.\n\n### Final ending — Awkward smiling stare with no eyes\n\nAfter finishing the dialogue, the elderly woman remains extremely close to the POV camera.\n\nHer eyes remain completely absent.\n\nHer hollow eye cavities face directly toward the viewer.\n\nHer hand remains near the viewer's throat, with the fingers partially curled as though she is maintaining a gentle but threatening grasp.\n\nShe continues smiling with the same sinister expression.\n\nShe holds a prolonged, uncomfortable, awkward, unblinking stare toward the viewer, despite having no eyes.\n\nShe remains almost completely still, maintaining the disturbing smile.\n\nThere is no additional dialogue, sudden attack, exaggerated facial change, or extra movement.\n\nThe subway continues its subtle background vibration.\n\nThe scene remains on her smiling, eyeless face and reaching hand until the 21-second video ends.\n\nDo not cut to black, fade out, or introduce any additional ending.\n\nThe existing `video_1` blockout controls the exact duration of the dialogue and remaining stare. Do not lengthen the final performance by shortening earlier events.\n\n## Camera\n\nSTRICT FIRST-PERSON POV. THE CAMERA IS THE YOUNG WOMAN'S EYES THROUGHOUT THE ENTIRE VIDEO.\n\nUse `video_1` as the definitive camera animation reference.\n\nReproduce its camera animation as closely as possible, including the exact camera path, timing, viewpoint, height, orientation, framing, head turns, pauses, blackout alignment, and final close-up.\n\n`image_1` must never be interpreted as a camera reference or opening shot.\n\nIt is strictly the young woman's identity, clothing, accessories, body proportions, and Walkman reference.\n\nDo not generate third-person shots of the woman, show her full body, show her face, or recreate her turnaround sheet during the video.\n\nThe camera remains at her natural eye height and follows the exact first-person orientation established by `video_1`.\n\nWhen her waist, lap, thighs, knees, hands, denim sleeves, or accessories become visible, they must match the young woman shown in `image_1`.\n\nAny visible clothing must respect realistic body positioning and the actual first-person framing.\n\nThe opening camera composition must be determined exclusively by `video_1`.\n\nSubsequent camera views preserve the original subway layout and exact perspectives established by `video_1`, using `image_2` and `image_3` for environmental appearance.\n\nDuring the empty-car sequence, the camera must complete the existing look-around movement while the entire subway is visibly unoccupied.\n\nAfter the searching movement, the camera returns to its straight-ahead orientation and pauses.\n\nThe elderly woman's laugh begins during this forward-facing pause.\n\nOnly after the laugh does the POV camera turn to the right, revealing the elderly woman seated at the far end of the subway.\n\nDo not reveal her early, place her in the straight-ahead view, or have her appear while the young woman is still looking around.\n\nThe approaching elderly woman is subsequently revealed using the same angles, shot sizes, distances, and framing already present in `video_1`.\n\nHer design and facial anatomy must match `image_4` at every distance.\n\nThe final close-up is an extreme first-person confrontation, with the elderly woman's face inches from the viewer.\n\nHer empty eye cavities and disturbing smile are clearly visible during the dialogue and final stare.\n\nHer reaching hand appears close to the lower foreground, creating realistic depth separation between her fingers and her face.\n\nThe reaching gesture must be directed toward the first-person viewer's throat, not toward an imaginary person elsewhere in the carriage.\n\nDo not independently introduce camera pushes, dramatic zooms, handheld shaking, additional head turns, lens changes, or new coverage.\n\nAny natural train vibration or subtle body movement must remain secondary to the existing camera animation.\n\nPreserve spatial continuity across every blackout.\n\nThe camera should feel like a real human seated inside the subway car, but the blockout's actual camera animation must always take priority over simulated naturalism.\n\n## Style\n\nKodak Vision3 500T 5219 film stock.\n\nRecreate the atmosphere of gritty late-night New York subway photography from 1985, using the supplied reference images for lighting, materials, period authenticity, costume, and visual texture.\n\nDense organic film grain, subtle halation around fluorescent ceiling lights, soft analog contrast, muted cyan-green fluorescent illumination, worn orange-yellow seating, subdued maroon clothing, deep greenish-black shadows, and naturally imperfect skin textures.\n\nThe subway should feel physically real and aged, with scratched metal poles, dirty windows, faded plastic seats, period advertisements, and authentic graffiti.\n\nMatch the young woman's clothing, physical characteristics, and Walkman design from `image_1` whenever these elements are visible from the first-person perspective.\n\nDo not reproduce the white studio background or turnaround-sheet composition from `image_1`.\n\nMatch the subway environments and passenger appearances in `image_2` and `image_3`.\n\nMatch the elderly woman's identity, wardrobe, posture, and eyeless facial design in `image_4`.\n\nMaintain realistic fluorescent light behavior throughout the scene.\n\nDuring blackouts, visibility drops to absolute black, except for the small Walkman indicator during the initial blackout when visible within the blockout's framing.\n\nWhen the lights return, the environment's reflections, shadows, and color temperature remain consistent.\n\nThe elderly woman should closely match the supplied turnaround sheet, retaining her curly gray hair, facial wrinkles, maroon cardigan, floral dress, lace collar, handbag, and completely absent eyes.\n\nHer smile is disturbing because of its persistence and the threatening intent behind it, not because of exaggerated supernatural facial distortion.\n\nHer empty eye cavities should appear realistically integrated into her face, with natural shadow depth and consistent surrounding skin texture.\n\nHer reaching hand should look physically real, with thin aged skin, visible tendons, natural knuckle movement, slight trembling, and realistic finger articulation.\n\nNo glowing eyes, exaggerated CGI effects, or unnecessary gore.\n\nHer super deep voice should feel profoundly unnatural and menacing, almost abyssal, but still clean, intelligible, and unmistakably American English.\n\nThe entire dialogue must maintain the same unnaturally deep register from beginning to end.\n\nMaintain a claustrophobic, grounded psychological-horror atmosphere.\n\n## Constraints\n\nBlockout fidelity and timing\n\n- Total video duration: exactly 21 seconds.\n- Primary video reference: `video_1`.\n- The supplied 21-second 3D blockout controls the entire temporal structure.\n- Follow its exact shot order, camera positions, camera movements, movement speed, lighting changes, blackout lengths, reveal timing, character placement, and final framing.\n- Do not create a separate action timeline based on this prompt.\n- Do not evenly distribute time between narrative phases.\n- Do not add or extend pauses, character actions, or transitions beyond the existing blockout.\n- Do not accelerate earlier events to create additional time for dialogue.\n- Do not independently stretch the scene to accommodate 21 seconds.\n- Treat the blockout as the animation foundation and this prompt as a visual and performance enhancement.\n- The reaching gesture is a localized performance enhancement within the existing final close-up, not an additional scene.\n- If the existing final shot provides insufficient time for the gesture, minimize the hand movement instead of changing the blockout's camera animation or duration.\n- The young woman's heavier breathing and final gasp must fit naturally into the existing blockout without retiming any shot.\n\nReference fidelity\n\n- `image_1`: Young woman's character identity, body proportions, hairstyle, denim jacket, faded white T-shirt, jeans, shoes, bracelets, wristwatch, and vintage silver-and-blue Sony Walkman. Use only the body parts naturally visible from first-person POV. Never use this image to establish camera framing.\n- `image_2`: 1985 subway interior, initial passengers, worn surfaces, lighting, and period details.\n- `image_3`: Additional subway and passenger reference, environmental materials, clothing, and photographic atmosphere.\n- `image_4`: Definitive turnaround sheet for the elderly woman's identity, costume, body proportions, smile, and hollow, eyeless facial anatomy.\n- `video_1`: Definitive 21-second reference for camera animation, scene timing, blocking, blackouts, and ending.\n\nFirst-person POV and empty-car reveal\n\n- Maintain strict first-person POV throughout.\n- The young woman is never externally visible.\n- No third-person shots, external camera angles, over-the-shoulder replacements, reflections revealing her face, or views of her full body.\n- Only her hands, arms, clothing, waist, lap, or legs may appear naturally when the existing blockout framing reveals them.\n- After the first blackout, the subway must be completely empty in every direction.\n- The elderly woman must not be visible during the initial look-around.\n- The POV returns straight ahead and pauses before the laugh.\n- The elderly woman's laugh begins while the camera is facing forward.\n- The camera then turns right to reveal the elderly woman at the far end.\n- Camera movement must reproduce `video_1` rather than invent new movements.\n\nCharacter and environmental continuity\n\n- Preserve the young woman's exact clothing, accessories, body proportions, and Walkman from `image_1`.\n- Preserve the elderly woman's exact facial identity, hair, clothing, posture, handbag, persistent smile, and missing eyes according to `image_4`.\n- Maintain identical subway architecture and layout across all illuminated moments.\n- No additional passengers after the initial disappearance.\n- All subsequent elderly-woman positional changes occur exclusively during blackouts.\n- No visible walking or teleportation effects.\n- Maintain realistic lighting direction, coherent shadows, and environmental continuity.\n\nFinal reaching gesture\n\n- During the last blackout, the elderly woman assumes her final established position.\n- When the lights return, one of her hands is already partially extended toward the POV viewer's neck.\n- Her fingers are naturally curled, as though she is about to grasp the viewer's throat.\n- The fingers may tighten slightly during the dialogue.\n- Keep her arm physically connected to her body, with realistic joint movement.\n- Her hand must not obscure her entire face or hollow eye cavities.\n- Do not introduce a new attack sequence, violent struggling, choking animation, or camera recoil.\n- The gesture must remain secondary to the existing final close-up and dialogue.\n\nAudio and dialogue performance\n\n- SPOKEN LANGUAGE: NATIVE AMERICAN ENGLISH (en-US) ONLY.\n- The elderly woman's only spoken line is: “I bet you have pretty eyes... I'll take good care of them.”\n- Speak the line word for word exactly as written.\n- No Mandarin, Cantonese, Chinese, or any other non-English speech.\n- No translation, paraphrasing, gibberish, invented syllables, or additional phrases.\n- The entire line must be delivered in a super deep voice from the first word to the last.\n- The voice is extremely low, dark, resonant, menacing, supernatural, and almost inhuman, but still clearly intelligible and distinctly American English.\n- There is no progressive deepening or gradual pitch shift. The voice begins super deep and remains super deep throughout.\n- Give “I'll take good care of them” a more possessive, threatening emphasis without changing the established vocal depth.\n- Maintain a broad, disturbing smile throughout the entire dialogue.\n- The elderly woman has no visible eyeballs, pupils, or irises. Her empty eye cavities match `image_4`.\n- Preserve accurate lip synchronization and intelligible English speech.\n- Her vocal delivery must fit inside the existing `video_1` final performance window.\n- The elderly woman's laugh is nonverbal.\n- When the lights begin to fail, the young woman starts breathing a little heavier, slightly panicked.\n- When the elderly woman is suddenly inches from her face, the young woman gives a brief, involuntary gasp.\n- No additional speech or improvised dialogue.\n\nFinal frame\n\n- Remain on the elderly woman's face after the dialogue.\n- Her eyes remain completely absent.\n- Her hollow eye cavities remain visible.\n- Maintain her sinister smile and intensely awkward stare.\n- Her hand remains extended near the viewer's neck.\n- Preserve the final camera position and framing from `video_1`.\n- No sudden movement, additional attack, or disappearance.\n- No cut to black.\n- No fade-out.\n- No additional final shot.\n- End directly on the held smiling stare at the end of the 21-second blockout.\n\nNegative prompts\n\nNo third-person views of the young woman, no visible face or full-body shots of the POV character, no recreation of the young woman's turnaround sheet, no white studio background, no opening camera composition derived from `image_1`, no modern subway elements, no smartphones, no contemporary digital screens, no modern advertisements, no visible teleportation, no glowing eyes, no monster transformation, no exaggerated CGI smile, no facial warping, no identity changes, no duplicated objects, no extra limbs or fingers, no detached hands, no incorrect anatomy, no lighting inconsistencies, no changing subway geometry, no camera jumps, no invented angles, no additional character movements, no premature appearance of the elderly woman, no background passengers after the first blackout, no restored eyeballs, no visible pupils or irises, no excessive gore, no subtitles, no captions, no text overlays, no non-English dialogue, no added dialogue, no excessive sound effects, no exaggerated horror stingers, no artificial motion artifacts, no extra shots, no altered event order, and no changes to the established 21-second 3D blockout timing.\n\nHighest-priority instruction: `video_1` is the definitive 21-second motion, camera, and timing blueprint. `image_1` establishes the young woman's identity, clothing, body proportions, accessories, and Walkman only; it must never dictate the opening framing or cause the woman to appear on camera. `image_2` and `image_3` control the subway environment and passengers, while `image_4` controls the eyeless elderly woman's design. Preserve the exact empty-car search, forward-facing pause, laughter, rightward reveal, successive blackouts, and final close-up. During the final confrontation, the elderly woman's hand reaches toward the POV viewer's neck while she delivers the exact line “I bet you have pretty eyes... I'll take good care of them” in clear American English with an extremely deep, menacing voice. The young woman breathes slightly heavier as the lights fail and gasps when the old woman appears inches from her face. End on the elderly woman's prolonged, awkward smile and hollow-eyed stare without cutting to black.",
+        "model.resolution": "720p",
+        "model.ratio": "16:9",
+        "model.duration": 21,
+        "model.generate_audio": true,
+        "model.task_type": "reference",
+        "model.output_format": "mp4",
+        "model.auto_downscale": true,
+        "model.auto_upscale": false,
+        "seed": 459506062,
+        "control_after_generate": "randomize",
+        "watermark": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 25,
+      "type": "LoadVideo",
+      "pos": [
+        199.27931244888129,
+        8705.618459820245
+      ],
+      "size": [
+        282.48333740234375,
+        302
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            39
+          ]
+        }
+      ],
+      "title": "Load Video (subway-blockout-21s.mp4)",
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "subway-blockout-21s.mp4",
+        "image"
+      ],
+      "widgets_values_named": {
+        "file": "subway_preview_21s.mp4",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 26,
+      "type": "LoadImage",
+      "pos": [
+        -859.0317911828173,
+        8180.035642994626
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (main.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "main.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "Main.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 32,
+      "type": "LoadImage",
+      "pos": [
+        -480.36187031208965,
+        8193.349495009072
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (subway-1.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "subway-1.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "Subway 1.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 36,
+      "type": "LoadImage",
+      "pos": [
+        174.33318276013108,
+        8201.500839765517
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            41
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (old-lady-ref.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "old-lady-ref.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "old lady ref.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 37,
+      "type": "LoadImage",
+      "pos": [
+        -147.19772420009815,
+        8204.29236428233
+      ],
+      "size": [
+        282.48148345947266,
+        314
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            40
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Load Image (subway-2.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "subway-2.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "Subway 2.png",
+        "upload": "image"
+      }
+    }
+  ],
+  "links": [
+    [
+      19,
+      24,
+      0,
+      16,
+      0,
+      "VIDEO"
+    ],
+    [
+      21,
+      26,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      33,
+      32,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      40,
+      37,
+      0,
+      24,
+      2,
+      "IMAGE"
+    ],
+    [
+      41,
+      36,
+      0,
+      24,
+      3,
+      "IMAGE"
+    ],
+    [
+      39,
+      25,
+      0,
+      24,
+      5,
+      "VIDEO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Reference Images",
+      "bounding": [
+        -875.381564416362,
+        8110.035642994626,
+        1384.4807298264327,
+        499.6525445661555
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Reference Video",
+      "bounding": [
+        188.20201900405772,
+        8643.159221707388,
+        302.48333740234375,
+        382
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ds": {
+      "scale": 1.333350860436148,
+      "offset": [
+        54.38808469698341,
+        -8330.828771196679
+      ]
+    },
+    "frontendVersion": "1.60.0"
+  },
+  "version": 0.4
+}
