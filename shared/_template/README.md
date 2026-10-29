@@ -13,7 +13,7 @@ One or two sentences: what it makes and how. Name the model.
 | | |
 | --- | --- |
 | **What it makes** | The output, in plain words: length, resolution, aspect ratio, sound. |
-| **How it works** | The main nodes and how the inputs flow through them. |
+| **How it works** | The main Nodes and how the inputs flow through them. |
 | **Why it's worth a look** | The technique someone can reuse on their own project. |
 
 ## Contents
@@ -39,10 +39,9 @@ One or two sentences: what it makes and how. Name the model.
 
 | File | What it is |
 | --- | --- |
-| [SLUG_local.json](SLUG_local.json) | The workflow for Comfy Desktop or a local ComfyUI. |
-| [Open in Comfy Cloud](CLOUD_LINK) | The workflow on Comfy Cloud. Requires a Comfy account. |
+| [SLUG_local.json](SLUG_local.json) | The Workflow for Comfy Desktop or a local ComfyUI. |
+| [Open in Comfy Cloud](CLOUD_LINK) | The Workflow on Comfy Cloud. Requires a Comfy account. |
 | [media/FILE](media/FILE) | A sample input. Say which input it fills. |
-| `media/screenshot-*.png` | Screenshots for this README. Not workflow inputs. |
 
 ## 03 · Run on Comfy Cloud
 
@@ -50,10 +49,11 @@ One or two sentences: what it makes and how. Name the model.
 | --- | --- |
 | Open | [Open in Comfy Cloud](CLOUD_LINK). Sign in first if the canvas opens empty. |
 | Run | What to fill in, then press **Run**. |
-| Cost | Credits per run, from the estimate on the node. |
+| Cost | Credits per run, from the estimate on the Node. |
 
-<!-- Keep this caution only when the workflow has a partner node. -->
-**Caution:** Check the credit estimate above the partner node before you run. It changes with the settings.
+<!-- Keep this caution only when the Workflow has a Partner Node. -->
+> [!CAUTION]
+> Before you run, check the credit estimate above the Partner Node. It changes with the settings.
 
 ## 04 · Run on Comfy Desktop or a local ComfyUI
 
@@ -61,8 +61,8 @@ Say what differs from the Cloud version, if anything.
 
 | Step | What to do |
 | --- | --- |
-| Requirements | Comfy Desktop or ComfyUI version, VRAM, and a Comfy account if there are partner nodes. |
-| Custom nodes | Each pack with a link, or "None". |
+| Requirements | Minimum ComfyUI or Comfy Desktop version, VRAM, and a Comfy account if there are Partner Nodes. |
+| Custom Nodes | Each pack with a link, or "None". |
 | Models | See the table below, or "None". |
 | Copy the inputs | Copy the input files from `media/` into `ComfyUI/input`. The screenshots are not needed. |
 | Load | Drag `SLUG_local.json` onto the canvas. |
@@ -72,8 +72,9 @@ Say what differs from the Cloud version, if anything.
 | --- | --- | --- | --- |
 | `model.safetensors` | `ComfyUI/models/diffusion_models` | 0 GB | [link](URL) |
 
-<!-- Keep this note only when the workflow has a partner node. -->
-**Note:** MODEL is a partner node. Even when ComfyUI runs on your machine, the node sends the job to the provider through the Comfy API and spends credits.
+<!-- Keep this note only when the Workflow has a Partner Node. -->
+> [!NOTE]
+> MODEL is a Partner Node. It runs on the provider's servers, so you don't need a GPU. When ComfyUI runs on your machine, the Node still sends the job to the provider through Comfy and spends Comfy Credits.
 
 ## 05 · Inputs
 
@@ -99,5 +100,5 @@ Say what differs from the Cloud version, if anything.
 
 | Problem | Try this |
 | --- | --- |
-| A Load node shows a missing file | The file is not in `ComfyUI/input`, or its name changed. The names must match exactly. |
-| Red nodes after loading | A custom node is missing. Open **Manager > Install Missing Custom Nodes** and restart. |
+| A `Load Image` or `Load Video` Node shows a missing file | The file is not in `ComfyUI/input`, or its name changed. The names must match exactly. |
+| Red Nodes after loading | A Custom Node is missing. Open **Manager > Install Missing Custom Nodes**, then restart ComfyUI. |

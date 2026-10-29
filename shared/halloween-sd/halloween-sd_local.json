@@ -1,0 +1,635 @@
+{
+  "id": "691b0f14-64df-4a9f-b3f5-411c37b942d7",
+  "revision": 0,
+  "last_node_id": 36,
+  "last_link_id": 38,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "SaveVideo",
+      "pos": [
+        1177.1910045496527,
+        8093.511586431356
+      ],
+      "size": [
+        1496.23109745926,
+        1215.0410142731494
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "video/Seedance2.5_r2v",
+        "auto",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "video/Seedance2.5_r2v",
+        "format": "auto",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 24,
+      "type": "ByteDance2ReferenceNodeV2",
+      "pos": [
+        608.4427516192078,
+        8143.398924885403
+      ],
+      "size": [
+        515.928727854743,
+        1037.6732956345645
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model.reference_images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 21
+        },
+        {
+          "name": "model.reference_images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 29
+        },
+        {
+          "name": "model.reference_images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "name": "model.reference_images.image_4",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 34
+        },
+        {
+          "name": "model.reference_images.image_5",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 35
+        },
+        {
+          "name": "model.reference_images.image_6",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 36
+        },
+        {
+          "name": "model.reference_images.image_7",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 37
+        },
+        {
+          "name": "model.reference_images.image_8",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model.reference_videos.video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": 38
+        },
+        {
+          "name": "model.reference_videos.video_2",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "name": "model.reference_audios.audio_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "model.reference_assets.asset_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "draft_task_id",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ByteDance2ReferenceNodeV2"
+      },
+      "widgets_values": [
+        "Seedance 2.5",
+        "SUBJECT\nA cinematic, stylized anime Halloween transformation sequence featuring one main male character in a decorated Halloween room.\n\nReference assignments:\nVideo_1 — Primary 3D blockout reference. Follow the action timing, choreography, character positioning, camera movement, framing, and transitions shown in Video_1. The blockout determines the structure of the entire sequence.\nImage 1 — Environment. A dark wood-paneled Halloween room with glowing jack-o'-lanterns, hanging ghost garlands, bats, spiderwebs, orange string lights, vivid purple and magenta lighting, and a reflective floor.\nImage 2 — Main character. A young anime man with messy, voluminous black hair, dark eyes, a muted teal-blue oversized bomber jacket, an off-white graphic T-shirt, baggy navy cargo pants, chunky cream sneakers, and a black crossbody bag.\nImage 3 — Skeleton transformation. An oversized black skeleton-print hoodie with cream-colored rib cage, spine, and arm-bone graphics, dark cargo pants, chunky sneakers, and a black crossbody bag. His entire head is enclosed inside a carved orange jack-o'-lantern helmet with sharply angled glowing eyes, a jagged illuminated grin, and a twisted pumpkin stem.\nImage 4 — Mummy transformation. Weathered off-white bandages wrapped around the character's entire body, with layered strips crossing his chest, arms, legs, neck, and part of his face. His messy black hair and expressive eyes remain visible between the facial wrappings. Loose bandage ends hang from his clothing and limbs.\nImage 5 — Ghost. A floating, sheet-covered ghost with large black eye openings containing glowing orange-yellow eyes. Its weathered off-white fabric has torn, flowing edges, blue-gray shadow patterns, and warm orange highlights. It carries an antique black metal lantern glowing with orange firelight, decorated with small pumpkin charms and dangling ornaments.\nImage 6 — Zombies. Bald, emaciated undead figures with grayish, decaying skin, deeply sunken dark eyes, exposed teeth, hollow cheeks, and skeletal hands with long clawlike fingers. They wear tattered, dirty gray shirts and dark, ripped pants. Their movements are stiff, uneven, and threatening.\nImage 7 — Truck. A large, weathered white commercial box truck with a rectangular cargo compartment, scuffed and stained white body panels, a cab-over-engine front, dark windshield, black side mirrors, heavy tires, and industrial detailing. Its exact proportions and design must match Image 7.\n\nAll subjects and objects must share the same bold, stylized anime/comic aesthetic.\n\nACTION\nFollow Video_1 for the exact pacing, action order, character movement, and camera choreography. The following descriptions clarify the intended actions and visual details. Timestamps are approximate and should match Video_1.\n\n1. GHOST APPROACH (0.0–4.2 s)\nThe main character from Image 2 stands centered in the Halloween environment from Image 1. His hands are outside his pockets, hanging loosely at his sides.\nThe ghost from Image 5 floats behind him in a clear four-move pattern, timed to the beat as shown in Video_1. First, it starts behind him on his left and sweeps to his right, passing behind his body. Second, it rises high into the air on his right side. Third, it drops back down. Fourth, it sweeps back across behind him to his left side. It then drifts forward and settles right beside him, ready to strike.\nThe ghost's torn sheet ripples and flutters as it moves, leaning into each direction of travel. Its glowing orange eyes remain visible through the dark eye openings, while the antique lantern swings gently beneath it, casting warm orange highlights onto the flowing cloth.\nThe character notices the ghost and follows it with his eyes. He turns his head slightly as it moves, looking worried and apprehensive. His eyebrows tighten, shoulders tense, and hands raise subtly in nervous anticipation. He sways nervously as the ghost circles him, maintaining a clear, concerned expression.\n\n2. GHOST POSSESSION, CONTORTION, AND LEVITATION (4.2–6.1 s)\nThe ghost suddenly accelerates toward the character and dives directly into his chest. Its flowing sheet compresses and disappears into his body. The lantern and hanging ornaments vanish with it as part of the possession effect.\nThe character jolts, and an electric cyan glow outlines his silhouette.\nHe immediately contorts as if possessed. His body snaps through a series of sharp, jerky, unnatural poses, with brief holds between each snap: his head cracks to one side, his back arches, his torso twists into a hunch, then he bends sideways the other way. He finishes by arching backward with his arms flung out.\nFrom that arch, he begins levitating above the floor. His arms float outward, fingers hang loosely, and his legs drift weightlessly beneath him, swaying slowly as if underwater.\nWhile floating, his head slowly rotates through a supernatural 360-degree turn.\nHis clothing and crossbody bag react subtly to the floating movement.\n\n3. JACK-O'-LANTERN DROP (6.1 s)\nA carved jack-o'-lantern matching the pumpkin-head design from Image 3 suddenly falls from above. The pumpkin spins as it drops and lands directly over the character's head, completely enclosing it. Its sharply angled eyes and jagged grin glow orange.\nThe impact slams him back toward the ground with exaggerated squash-and-stretch. His knees compress, his torso bends, and his arms swing upward from the force. He immediately grabs both sides of the pumpkin to stabilize it.\nThe pumpkin must land before the skeleton costume appears. He is still wearing his original outfit at this point.\n\n4. GHOST EJECTION (7.1 s)\nThe impact forces the ghost from Image 5 back out of the character's body. The ghost bursts upward and diagonally to the left, stretching and fluttering as it flies away. Its lantern swings wildly from the acceleration, casting brief streaks of orange light. The ghost lets out a supernatural wail and disappears toward the upper-left side of the frame.\nThe cyan possession glow fades. The main character wobbles with the pumpkin still covering his head, briefly holding it before regaining his balance.\n\n5. SKELETON COSTUME TRANSFORMATION (8.1 s)\nThe skeleton costume from Image 3 suddenly flies into the frame from the left. The oversized black skeleton hoodie and dark costume pieces rush toward the character, wrapping onto his body in one forceful, continuous movement.\nHis original blue jacket and shirt are replaced by the black skeleton-print hoodie. Preserve the cream-colored rib cage, spine, and arm-bone graphics exactly as shown in Image 3. The black crossbody bag and dark cargo pants remain consistent with the skeleton reference.\nThe costume hits with enough force to push his hips sideways, followed by his torso and shoulders. His pumpkin head lags behind the movement, and his arms swing through before settling. He now fully matches Image 3.\n\n6. GIANT PUMPKIN AND FAT TRANSFORMATION (9.1 s)\nThe character suddenly inflates into a round, overweight skeleton figure. His torso and stomach rapidly expand outward, stretching the skeleton hoodie and its bone graphics. His arms and legs become thicker while his overall height remains approximately the same.\nThe jack-o'-lantern head balloons to more than twice its original size. The glowing eyes and jagged mouth expand proportionally with the pumpkin. His inflated body and oversized pumpkin head wobble elastically before settling.\n\n7. SHRINKING TRANSFORMATION (10.1 s)\nHis body suddenly compresses downward into a miniature, stubby version of himself. His skeleton costume remains recognizable, with the bone graphics adjusting naturally to his smaller proportions.\nThe pumpkin shrinks back toward normal size but now appears comically enormous compared with his tiny body. He bounces slightly and settles near the center of the frame.\n\n8. ZOMBIE ATTACK (11.1 s)\nTwo zombies matching Image 6 enter from the right side. Both have bald, decomposing heads, deeply sunken eyes, grayish skin, gaunt faces, and exposed teeth. Their dirty gray shirts hang loosely over skeletal torsos, while their dark pants are ripped and worn.\nThey shamble toward the miniature character with hunched shoulders, uneven steps, and long, bony arms reaching forward. Their clawlike fingers curl toward his pumpkin head as they lean over him. The zombies should appear large in the foreground compared with the tiny character.\nThe tiny character turns his whole body, pumpkin head included, about three-quarters toward the zombies. He trembles and backs away slightly, frightened by their approach.\nPreserve the threatening expressions and detailed decayed appearance from Image 6.\n\n9. TRUCK COLLISION AND MUMMY TRANSFORMATION (12.0 s)\nThe large white box truck from Image 7 suddenly speeds across the immediate foreground from left to right. The truck must match Image 7, including its rectangular white cargo box, weathered metal panels, compact cab-over-engine front, black side mirrors, dark windshield, and heavy wheels. It is not a hearse or a generic black vehicle.\nThe truck crashes into both zombies, launching them upward and toward the upper-right side of the frame. Their bodies tumble through the air with exaggerated animated momentum. The truck briefly blocks the view of the main character.\nAs the truck clears, the character is restored to his normal height and has transformed into the mummy from Image 4. The skeleton outfit and pumpkin head are completely gone. He is wrapped in layered, weathered off-white bandages, including partial wrapping around his forehead and cheeks, while his black hair and eyes remain visible.\nThe impact sends him spinning with his arms extended outward. The rotation slows, and he stops facing forward. He then takes one stiff mummy step toward the camera with both arms extended in front of him.\n\n10. MUMMY UNWRAPPING (13.0 s)\nA loose bandage end lifts upward as though pulled by an invisible force above the frame. The character begins spinning rapidly like a top, rising slightly off the floor. The bandages unwind continuously around his body, spiraling upward as they are pulled away.\nThe strips peel away from his head, neck, torso, arms, and legs, gradually revealing his original blue bomber jacket, white graphic shirt, dark cargo pants, crossbody bag, and cream sneakers. The bandages whip through the air with natural fabric tension and trailing motion. The final strip is yanked completely upward and out of frame.\nHis original appearance from Image 2 is fully restored.\n\n11. LANDING (14.0 s)\nThe character drops onto the floor after the spinning stops. His knees compress on impact before rebounding. He sways dizzily, his head tilting and shoulders rocking as his arms swing outward to regain balance. His original clothing and proportions remain fully restored.\n\n12. SHOWER CURTAIN TRANSITION (15.0 s)\nA shower curtain suddenly slides horizontally across the foreground, covering the Halloween environment. As the curtain slides in, the character slides slightly to the right in the same motion, so the two read as one continuous move.\nBehind the curtain, the character appears as a black silhouette standing beneath a showerhead, slightly right of center. Warm backlighting illuminates the curtain while water sprays down over his head and shoulders.\nFacing forward, he raises both hands into his hair and begins scrubbing, unaware of the approaching danger.\nThe scene has a theatrical, classic horror-film composition while maintaining the same stylized comic-anime treatment.\n\n13. KNIFE ATTACKER AND FRIGHTENED REACTION (15.9 s)\nA threatening human silhouette slides in from the left, holding a large kitchen knife raised overhead, and stops just short of the character, holding that pose.\nThe main character suddenly notices the figure and snaps sideways to face him. He freezes in a recoil of fear: leaning backward with bent knees, both palms raised defensively, one hand higher than the other. His head tilts backward as he screams. He holds the pose with only a slight tremble.\nHis frightened reaction should be exaggerated and immediately readable. Both figures hold their poses like a frozen tableau; there is no struggle or stabbing motion.\nSharp orchestral violin stabs and a scream synchronize with the sudden movement.\nBoth figures remain entirely in silhouette. No graphic injury is shown.\n\n14. FINAL CURTAIN REVEAL (16.9–18.0 s)\nThe shower curtain suddenly flies upward. The knife attacker's silhouette and the showerhead rise up with it, like shadows on the curtain, and leave the frame together.\nAt the same moment, the character fades from silhouette back to full color, relaxes his arms, turns to face forward, and drifts back to the center of the frame. He stands exactly where he began, fully restored to his normal appearance from Image 2.\nHis messy black hair, teal-blue jacket, white graphic shirt, navy cargo pants, cream sneakers, and black crossbody bag are restored. He stands with his hands naturally outside his pockets, matching the opening composition.\nThe wooden wall panels, Halloween decorations, glowing pumpkins, and colorful lighting remain unchanged.\nThe final shot holds for about one second on the restored character and environment, creating a clean visual loop.\n\nCAMERA\nUse Video_1 as the absolute camera and motion reference. Match its camera angle, height, perspective, framing, subject placement, transitions, and motion timing.\nMaintain the central full-body composition established by the opening shot. Keep the character clearly visible during the ghost approach, possession, transformations, and recovery actions.\nDuring the opening, the character's worried expression and gaze tracking the ghost must remain readable without changing the camera framing.\nThe ghost moves around the main character through the scene's depth, passing behind him on its side-to-side moves. The skeleton costume enters from screen left. The zombies enter from screen right. The white box truck moves across the immediate foreground from left to right. The shower curtain covers the entire frame before revealing the silhouette scene.\nDo not introduce camera cuts, zooms, or new camera angles absent from Video_1.\n\nSTYLE\nBold, graphic, comic-inspired 2D anime animation matching Images 1–7.\nUse expressive black ink outlines, strong cel shading, halftone textures, painterly color transitions, graphic shadows, and saturated neon highlights.\nMaintain the vibrant purple, magenta, deep blue, and orange palette established by the reference images.\nThe environment should retain the dark wooden walls, glowing pumpkins, ghost garlands, decorative bats, string lights, spiderwebs, and reflective floor from Image 1.\nThe character must retain his distinct facial features, hairstyle, proportions, and clothing design from Image 2.\nThe skeleton transformation must preserve the exact hoodie design and glowing pumpkin helmet from Image 3.\nThe mummy must feature the detailed, weathered bandages and partially visible face shown in Image 4.\nThe ghost must match Image 5, including the glowing orange eyes, weathered sheet, trailing fabric, hanging lantern, and pumpkin ornaments.\nThe zombies must match Image 6, including their bald heads, decayed facial details, torn clothing, skeletal hands, and gaunt bodies.\nThe truck must match Image 7, including its white box-shaped cargo body, worn industrial appearance, cab design, and wheel proportions.\nUse expressive character animation, exaggerated anticipation, impact poses, dynamic smear frames, elastic squash-and-stretch, and strong follow-through.\nAll characters, costumes, props, and vehicles should retain the same cohesive illustrated visual style.\n\nCONSTRAINTS\nVideo_1 controls all action timing, movement, staging, and camera choreography.\nTotal duration: 18 seconds, matching the blockout.\nPreserve the exact action order and pacing without adding new events.\nImage 1 defines the environment. Image 2 defines the original main character. Image 3 defines the skeleton outfit and pumpkin head. Image 4 defines the mummy costume. Image 5 defines the ghost, including its lantern and hanging ornaments. Image 6 defines the zombies. Image 7 defines the white box truck.\nDuring the opening, the ghost must complete its four-move pattern (right, up, down, left) before possessing him.\nDuring the opening, the character must watch the ghost with a worried expression and keep his hands out of his pockets.\nThe ghost must possess him, and he must contort, before he begins levitating.\nThe pumpkin must fall onto his head before the skeleton outfit arrives.\nThe skeleton costume must physically fly in from the left and wrap onto him.\nPreserve the pumpkin helmet during the skeleton, inflation, shrinking, and zombie attack phases.\nThe zombies must resemble Image 6, not generic cartoon zombies.\nThe truck must resemble Image 7, not a hearse or another vehicle type.\nThe truck strikes both zombies and briefly obscures the character during the mummy transformation.\nThe pumpkin head and skeleton costume disappear when the mummy appears.\nThe mummy must retain partial facial bandages while leaving his eyes and some hair visible.\nThe mummy bandages must fully unwind before the landing.\nThe shower scene must remain silhouetted behind the curtain.\nThe knife attacker must enter from the left and trigger a clearly frightened reaction; both figures hold their poses with no struggle.\nThe attacker and showerhead silhouettes leave with the rising curtain.\nThe final reveal must restore the original character, environment, and camera composition.\nNo additional characters, costumes, vehicles, or unrelated props.\nNo unnecessary camera cuts or movements.\nNo broken anatomy, disappearing body parts, unintended morphing, or inconsistent costume changes.\nNo text, subtitles, watermarks, HUD, logos, or overlays.\nNo photorealism or glossy 3D rendering.\nNo graphic violence.\n\nFINAL PRIORITY\nVideo_1 determines exactly what happens, when it happens, and how the camera frames it. Images 1–7 define the precise visual appearance of every element. Preserve the distinctive lantern-carrying ghost from Image 5, the decayed zombies from Image 6, and the weathered white box truck from Image 7 while keeping every transformation and action faithful to the 3D blockout.\n",
+        "720p",
+        "9:16",
+        18,
+        true,
+        "reference",
+        "mp4",
+        true,
+        false,
+        320467102,
+        "randomize",
+        false
+      ],
+      "widgets_values_named": {
+        "model": "Seedance 2.5",
+        "model.prompt": "SUBJECT\nA cinematic, stylized anime Halloween transformation sequence featuring one main male character in a decorated Halloween room.\n\nReference assignments:\nVideo_1 — Primary 3D blockout reference. Follow the action timing, choreography, character positioning, camera movement, framing, and transitions shown in Video_1. The blockout determines the structure of the entire sequence.\nImage 1 — Environment. A dark wood-paneled Halloween room with glowing jack-o'-lanterns, hanging ghost garlands, bats, spiderwebs, orange string lights, vivid purple and magenta lighting, and a reflective floor.\nImage 2 — Main character. A young anime man with messy, voluminous black hair, dark eyes, a muted teal-blue oversized bomber jacket, an off-white graphic T-shirt, baggy navy cargo pants, chunky cream sneakers, and a black crossbody bag.\nImage 3 — Skeleton transformation. An oversized black skeleton-print hoodie with cream-colored rib cage, spine, and arm-bone graphics, dark cargo pants, chunky sneakers, and a black crossbody bag. His entire head is enclosed inside a carved orange jack-o'-lantern helmet with sharply angled glowing eyes, a jagged illuminated grin, and a twisted pumpkin stem.\nImage 4 — Mummy transformation. Weathered off-white bandages wrapped around the character's entire body, with layered strips crossing his chest, arms, legs, neck, and part of his face. His messy black hair and expressive eyes remain visible between the facial wrappings. Loose bandage ends hang from his clothing and limbs.\nImage 5 — Ghost. A floating, sheet-covered ghost with large black eye openings containing glowing orange-yellow eyes. Its weathered off-white fabric has torn, flowing edges, blue-gray shadow patterns, and warm orange highlights. It carries an antique black metal lantern glowing with orange firelight, decorated with small pumpkin charms and dangling ornaments.\nImage 6 — Zombies. Bald, emaciated undead figures with grayish, decaying skin, deeply sunken dark eyes, exposed teeth, hollow cheeks, and skeletal hands with long clawlike fingers. They wear tattered, dirty gray shirts and dark, ripped pants. Their movements are stiff, uneven, and threatening.\nImage 7 — Truck. A large, weathered white commercial box truck with a rectangular cargo compartment, scuffed and stained white body panels, a cab-over-engine front, dark windshield, black side mirrors, heavy tires, and industrial detailing. Its exact proportions and design must match Image 7.\n\nAll subjects and objects must share the same bold, stylized anime/comic aesthetic.\n\nACTION\nFollow Video_1 for the exact pacing, action order, character movement, and camera choreography. The following descriptions clarify the intended actions and visual details. Timestamps are approximate and should match Video_1.\n\n1. GHOST APPROACH (0.0–4.2 s)\nThe main character from Image 2 stands centered in the Halloween environment from Image 1. His hands are outside his pockets, hanging loosely at his sides.\nThe ghost from Image 5 floats behind him in a clear four-move pattern, timed to the beat as shown in Video_1. First, it starts behind him on his left and sweeps to his right, passing behind his body. Second, it rises high into the air on his right side. Third, it drops back down. Fourth, it sweeps back across behind him to his left side. It then drifts forward and settles right beside him, ready to strike.\nThe ghost's torn sheet ripples and flutters as it moves, leaning into each direction of travel. Its glowing orange eyes remain visible through the dark eye openings, while the antique lantern swings gently beneath it, casting warm orange highlights onto the flowing cloth.\nThe character notices the ghost and follows it with his eyes. He turns his head slightly as it moves, looking worried and apprehensive. His eyebrows tighten, shoulders tense, and hands raise subtly in nervous anticipation. He sways nervously as the ghost circles him, maintaining a clear, concerned expression.\n\n2. GHOST POSSESSION, CONTORTION, AND LEVITATION (4.2–6.1 s)\nThe ghost suddenly accelerates toward the character and dives directly into his chest. Its flowing sheet compresses and disappears into his body. The lantern and hanging ornaments vanish with it as part of the possession effect.\nThe character jolts, and an electric cyan glow outlines his silhouette.\nHe immediately contorts as if possessed. His body snaps through a series of sharp, jerky, unnatural poses, with brief holds between each snap: his head cracks to one side, his back arches, his torso twists into a hunch, then he bends sideways the other way. He finishes by arching backward with his arms flung out.\nFrom that arch, he begins levitating above the floor. His arms float outward, fingers hang loosely, and his legs drift weightlessly beneath him, swaying slowly as if underwater.\nWhile floating, his head slowly rotates through a supernatural 360-degree turn.\nHis clothing and crossbody bag react subtly to the floating movement.\n\n3. JACK-O'-LANTERN DROP (6.1 s)\nA carved jack-o'-lantern matching the pumpkin-head design from Image 3 suddenly falls from above. The pumpkin spins as it drops and lands directly over the character's head, completely enclosing it. Its sharply angled eyes and jagged grin glow orange.\nThe impact slams him back toward the ground with exaggerated squash-and-stretch. His knees compress, his torso bends, and his arms swing upward from the force. He immediately grabs both sides of the pumpkin to stabilize it.\nThe pumpkin must land before the skeleton costume appears. He is still wearing his original outfit at this point.\n\n4. GHOST EJECTION (7.1 s)\nThe impact forces the ghost from Image 5 back out of the character's body. The ghost bursts upward and diagonally to the left, stretching and fluttering as it flies away. Its lantern swings wildly from the acceleration, casting brief streaks of orange light. The ghost lets out a supernatural wail and disappears toward the upper-left side of the frame.\nThe cyan possession glow fades. The main character wobbles with the pumpkin still covering his head, briefly holding it before regaining his balance.\n\n5. SKELETON COSTUME TRANSFORMATION (8.1 s)\nThe skeleton costume from Image 3 suddenly flies into the frame from the left. The oversized black skeleton hoodie and dark costume pieces rush toward the character, wrapping onto his body in one forceful, continuous movement.\nHis original blue jacket and shirt are replaced by the black skeleton-print hoodie. Preserve the cream-colored rib cage, spine, and arm-bone graphics exactly as shown in Image 3. The black crossbody bag and dark cargo pants remain consistent with the skeleton reference.\nThe costume hits with enough force to push his hips sideways, followed by his torso and shoulders. His pumpkin head lags behind the movement, and his arms swing through before settling. He now fully matches Image 3.\n\n6. GIANT PUMPKIN AND FAT TRANSFORMATION (9.1 s)\nThe character suddenly inflates into a round, overweight skeleton figure. His torso and stomach rapidly expand outward, stretching the skeleton hoodie and its bone graphics. His arms and legs become thicker while his overall height remains approximately the same.\nThe jack-o'-lantern head balloons to more than twice its original size. The glowing eyes and jagged mouth expand proportionally with the pumpkin. His inflated body and oversized pumpkin head wobble elastically before settling.\n\n7. SHRINKING TRANSFORMATION (10.1 s)\nHis body suddenly compresses downward into a miniature, stubby version of himself. His skeleton costume remains recognizable, with the bone graphics adjusting naturally to his smaller proportions.\nThe pumpkin shrinks back toward normal size but now appears comically enormous compared with his tiny body. He bounces slightly and settles near the center of the frame.\n\n8. ZOMBIE ATTACK (11.1 s)\nTwo zombies matching Image 6 enter from the right side. Both have bald, decomposing heads, deeply sunken eyes, grayish skin, gaunt faces, and exposed teeth. Their dirty gray shirts hang loosely over skeletal torsos, while their dark pants are ripped and worn.\nThey shamble toward the miniature character with hunched shoulders, uneven steps, and long, bony arms reaching forward. Their clawlike fingers curl toward his pumpkin head as they lean over him. The zombies should appear large in the foreground compared with the tiny character.\nThe tiny character turns his whole body, pumpkin head included, about three-quarters toward the zombies. He trembles and backs away slightly, frightened by their approach.\nPreserve the threatening expressions and detailed decayed appearance from Image 6.\n\n9. TRUCK COLLISION AND MUMMY TRANSFORMATION (12.0 s)\nThe large white box truck from Image 7 suddenly speeds across the immediate foreground from left to right. The truck must match Image 7, including its rectangular white cargo box, weathered metal panels, compact cab-over-engine front, black side mirrors, dark windshield, and heavy wheels. It is not a hearse or a generic black vehicle.\nThe truck crashes into both zombies, launching them upward and toward the upper-right side of the frame. Their bodies tumble through the air with exaggerated animated momentum. The truck briefly blocks the view of the main character.\nAs the truck clears, the character is restored to his normal height and has transformed into the mummy from Image 4. The skeleton outfit and pumpkin head are completely gone. He is wrapped in layered, weathered off-white bandages, including partial wrapping around his forehead and cheeks, while his black hair and eyes remain visible.\nThe impact sends him spinning with his arms extended outward. The rotation slows, and he stops facing forward. He then takes one stiff mummy step toward the camera with both arms extended in front of him.\n\n10. MUMMY UNWRAPPING (13.0 s)\nA loose bandage end lifts upward as though pulled by an invisible force above the frame. The character begins spinning rapidly like a top, rising slightly off the floor. The bandages unwind continuously around his body, spiraling upward as they are pulled away.\nThe strips peel away from his head, neck, torso, arms, and legs, gradually revealing his original blue bomber jacket, white graphic shirt, dark cargo pants, crossbody bag, and cream sneakers. The bandages whip through the air with natural fabric tension and trailing motion. The final strip is yanked completely upward and out of frame.\nHis original appearance from Image 2 is fully restored.\n\n11. LANDING (14.0 s)\nThe character drops onto the floor after the spinning stops. His knees compress on impact before rebounding. He sways dizzily, his head tilting and shoulders rocking as his arms swing outward to regain balance. His original clothing and proportions remain fully restored.\n\n12. SHOWER CURTAIN TRANSITION (15.0 s)\nA shower curtain suddenly slides horizontally across the foreground, covering the Halloween environment. As the curtain slides in, the character slides slightly to the right in the same motion, so the two read as one continuous move.\nBehind the curtain, the character appears as a black silhouette standing beneath a showerhead, slightly right of center. Warm backlighting illuminates the curtain while water sprays down over his head and shoulders.\nFacing forward, he raises both hands into his hair and begins scrubbing, unaware of the approaching danger.\nThe scene has a theatrical, classic horror-film composition while maintaining the same stylized comic-anime treatment.\n\n13. KNIFE ATTACKER AND FRIGHTENED REACTION (15.9 s)\nA threatening human silhouette slides in from the left, holding a large kitchen knife raised overhead, and stops just short of the character, holding that pose.\nThe main character suddenly notices the figure and snaps sideways to face him. He freezes in a recoil of fear: leaning backward with bent knees, both palms raised defensively, one hand higher than the other. His head tilts backward as he screams. He holds the pose with only a slight tremble.\nHis frightened reaction should be exaggerated and immediately readable. Both figures hold their poses like a frozen tableau; there is no struggle or stabbing motion.\nSharp orchestral violin stabs and a scream synchronize with the sudden movement.\nBoth figures remain entirely in silhouette. No graphic injury is shown.\n\n14. FINAL CURTAIN REVEAL (16.9–18.0 s)\nThe shower curtain suddenly flies upward. The knife attacker's silhouette and the showerhead rise up with it, like shadows on the curtain, and leave the frame together.\nAt the same moment, the character fades from silhouette back to full color, relaxes his arms, turns to face forward, and drifts back to the center of the frame. He stands exactly where he began, fully restored to his normal appearance from Image 2.\nHis messy black hair, teal-blue jacket, white graphic shirt, navy cargo pants, cream sneakers, and black crossbody bag are restored. He stands with his hands naturally outside his pockets, matching the opening composition.\nThe wooden wall panels, Halloween decorations, glowing pumpkins, and colorful lighting remain unchanged.\nThe final shot holds for about one second on the restored character and environment, creating a clean visual loop.\n\nCAMERA\nUse Video_1 as the absolute camera and motion reference. Match its camera angle, height, perspective, framing, subject placement, transitions, and motion timing.\nMaintain the central full-body composition established by the opening shot. Keep the character clearly visible during the ghost approach, possession, transformations, and recovery actions.\nDuring the opening, the character's worried expression and gaze tracking the ghost must remain readable without changing the camera framing.\nThe ghost moves around the main character through the scene's depth, passing behind him on its side-to-side moves. The skeleton costume enters from screen left. The zombies enter from screen right. The white box truck moves across the immediate foreground from left to right. The shower curtain covers the entire frame before revealing the silhouette scene.\nDo not introduce camera cuts, zooms, or new camera angles absent from Video_1.\n\nSTYLE\nBold, graphic, comic-inspired 2D anime animation matching Images 1–7.\nUse expressive black ink outlines, strong cel shading, halftone textures, painterly color transitions, graphic shadows, and saturated neon highlights.\nMaintain the vibrant purple, magenta, deep blue, and orange palette established by the reference images.\nThe environment should retain the dark wooden walls, glowing pumpkins, ghost garlands, decorative bats, string lights, spiderwebs, and reflective floor from Image 1.\nThe character must retain his distinct facial features, hairstyle, proportions, and clothing design from Image 2.\nThe skeleton transformation must preserve the exact hoodie design and glowing pumpkin helmet from Image 3.\nThe mummy must feature the detailed, weathered bandages and partially visible face shown in Image 4.\nThe ghost must match Image 5, including the glowing orange eyes, weathered sheet, trailing fabric, hanging lantern, and pumpkin ornaments.\nThe zombies must match Image 6, including their bald heads, decayed facial details, torn clothing, skeletal hands, and gaunt bodies.\nThe truck must match Image 7, including its white box-shaped cargo body, worn industrial appearance, cab design, and wheel proportions.\nUse expressive character animation, exaggerated anticipation, impact poses, dynamic smear frames, elastic squash-and-stretch, and strong follow-through.\nAll characters, costumes, props, and vehicles should retain the same cohesive illustrated visual style.\n\nCONSTRAINTS\nVideo_1 controls all action timing, movement, staging, and camera choreography.\nTotal duration: 18 seconds, matching the blockout.\nPreserve the exact action order and pacing without adding new events.\nImage 1 defines the environment. Image 2 defines the original main character. Image 3 defines the skeleton outfit and pumpkin head. Image 4 defines the mummy costume. Image 5 defines the ghost, including its lantern and hanging ornaments. Image 6 defines the zombies. Image 7 defines the white box truck.\nDuring the opening, the ghost must complete its four-move pattern (right, up, down, left) before possessing him.\nDuring the opening, the character must watch the ghost with a worried expression and keep his hands out of his pockets.\nThe ghost must possess him, and he must contort, before he begins levitating.\nThe pumpkin must fall onto his head before the skeleton outfit arrives.\nThe skeleton costume must physically fly in from the left and wrap onto him.\nPreserve the pumpkin helmet during the skeleton, inflation, shrinking, and zombie attack phases.\nThe zombies must resemble Image 6, not generic cartoon zombies.\nThe truck must resemble Image 7, not a hearse or another vehicle type.\nThe truck strikes both zombies and briefly obscures the character during the mummy transformation.\nThe pumpkin head and skeleton costume disappear when the mummy appears.\nThe mummy must retain partial facial bandages while leaving his eyes and some hair visible.\nThe mummy bandages must fully unwind before the landing.\nThe shower scene must remain silhouetted behind the curtain.\nThe knife attacker must enter from the left and trigger a clearly frightened reaction; both figures hold their poses with no struggle.\nThe attacker and showerhead silhouettes leave with the rising curtain.\nThe final reveal must restore the original character, environment, and camera composition.\nNo additional characters, costumes, vehicles, or unrelated props.\nNo unnecessary camera cuts or movements.\nNo broken anatomy, disappearing body parts, unintended morphing, or inconsistent costume changes.\nNo text, subtitles, watermarks, HUD, logos, or overlays.\nNo photorealism or glossy 3D rendering.\nNo graphic violence.\n\nFINAL PRIORITY\nVideo_1 determines exactly what happens, when it happens, and how the camera frames it. Images 1–7 define the precise visual appearance of every element. Preserve the distinctive lantern-carrying ghost from Image 5, the decayed zombies from Image 6, and the weathered white box truck from Image 7 while keeping every transformation and action faithful to the 3D blockout.\n",
+        "model.resolution": "720p",
+        "model.ratio": "9:16",
+        "model.duration": 18,
+        "model.generate_audio": true,
+        "model.task_type": "reference",
+        "model.output_format": "mp4",
+        "model.auto_downscale": true,
+        "model.auto_upscale": false,
+        "seed": 320467102,
+        "control_after_generate": "randomize",
+        "watermark": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 25,
+      "type": "LoadVideo",
+      "pos": [
+        259.74042657113074,
+        8627.540414849338
+      ],
+      "size": [
+        282.48333740234375,
+        576.1925998263889
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            38
+          ]
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "LoadVideo"
+      },
+      "widgets_values": [
+        "halloween-blockout-18s.mp4",
+        "image"
+      ],
+      "widgets_values_named": {
+        "file": "halloween_finger_beat_blockout_ghostintro_no_overlay_18s_v2.mp4",
+        "upload": "image"
+      },
+      "title": "Load Video (halloween-blockout-18s.mp4)"
+    },
+    {
+      "id": 26,
+      "type": "LoadImage",
+      "pos": [
+        -859.0317911828173,
+        8180.035642994626
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            21
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (room.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "room.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "bg.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 29,
+      "type": "LoadImage",
+      "pos": [
+        -511.5152347638179,
+        8188.598745893786
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            29
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (main-character.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "main-character.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "2s.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 32,
+      "type": "LoadImage",
+      "pos": [
+        -86.38186165420208,
+        8182.647158327578
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (skeleton.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "skeleton.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "skeletonpng.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 33,
+      "type": "LoadImage",
+      "pos": [
+        -865.3815644163619,
+        8606.840186987374
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            34
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (mummy.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "mummy.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "mummy2.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 34,
+      "type": "LoadImage",
+      "pos": [
+        -511.9857291869126,
+        8596.897457967596
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            35
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (ghost.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "ghost.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "ghost.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 35,
+      "type": "LoadImage",
+      "pos": [
+        -108.0922643975856,
+        8610.908866257101
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            36
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (zombies.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "zombies.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "zombied.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 36,
+      "type": "LoadImage",
+      "pos": [
+        275.3364554226399,
+        8188.791805033207
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            37
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (truck.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "truck.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "truck.png",
+        "upload": "image"
+      }
+    }
+  ],
+  "links": [
+    [
+      19,
+      24,
+      0,
+      16,
+      0,
+      "VIDEO"
+    ],
+    [
+      21,
+      26,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      29,
+      29,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ],
+    [
+      33,
+      32,
+      0,
+      24,
+      2,
+      "IMAGE"
+    ],
+    [
+      34,
+      33,
+      0,
+      24,
+      3,
+      "IMAGE"
+    ],
+    [
+      35,
+      34,
+      0,
+      24,
+      4,
+      "IMAGE"
+    ],
+    [
+      36,
+      35,
+      0,
+      24,
+      5,
+      "IMAGE"
+    ],
+    [
+      37,
+      36,
+      0,
+      24,
+      6,
+      "IMAGE"
+    ],
+    [
+      38,
+      25,
+      0,
+      24,
+      8,
+      "VIDEO"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Reference Images",
+      "bounding": [
+        -875.381564416362,
+        8110.035642994626,
+        1450.7013572413439,
+        860.8565606648226
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    },
+    {
+      "id": 2,
+      "title": "Reference Video",
+      "bounding": [
+        249.7404265711307,
+        8557.54041484934,
+        302.48333740234375,
+        382
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ds": {
+      "scale": 0.8489894592987673,
+      "offset": [
+        112.41295888659442,
+        -8002.8588000892905
+      ]
+    },
+    "frontendVersion": "1.60.0"
+  },
+  "version": 0.4
+}
