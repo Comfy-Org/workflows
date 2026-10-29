@@ -1,0 +1,292 @@
+{
+  "id": "691b0f14-64df-4a9f-b3f5-411c37b942d7",
+  "revision": 0,
+  "last_node_id": 37,
+  "last_link_id": 41,
+  "nodes": [
+    {
+      "id": 16,
+      "type": "SaveVideo",
+      "pos": [
+        1437.0106823004548,
+        8130.300254422048
+      ],
+      "size": [
+        1496.23109745926,
+        1215.0410142731494
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "link": 19
+        }
+      ],
+      "outputs": [
+        {
+          "name": "video",
+          "type": "VIDEO",
+          "links": null
+        }
+      ],
+      "properties": {},
+      "widgets_values": [
+        "video/Seedance2.5_r2v",
+        "auto",
+        "auto",
+        "auto"
+      ],
+      "widgets_values_named": {
+        "filename_prefix": "video/Seedance2.5_r2v",
+        "format": "auto",
+        "format.codec": "auto",
+        "codec": "auto"
+      }
+    },
+    {
+      "id": 24,
+      "type": "ByteDance2ReferenceNodeV2",
+      "pos": [
+        608.4427516192078,
+        8143.398924885403
+      ],
+      "size": [
+        608.0128984672689,
+        969.4814785227081
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "model.reference_images.image_1",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 33
+        },
+        {
+          "name": "model.reference_images.image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 40
+        },
+        {
+          "name": "model.reference_images.image_3",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": null
+        },
+        {
+          "name": "model.reference_videos.video_1",
+          "shape": 7,
+          "type": "VIDEO",
+          "link": null
+        },
+        {
+          "name": "model.reference_audios.audio_1",
+          "shape": 7,
+          "type": "AUDIO",
+          "link": null
+        },
+        {
+          "name": "model.reference_assets.asset_1",
+          "shape": 7,
+          "type": "STRING",
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "name": "VIDEO",
+          "type": "VIDEO",
+          "links": [
+            19
+          ]
+        },
+        {
+          "name": "draft_task_id",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "Node name for S&R": "ByteDance2ReferenceNodeV2"
+      },
+      "widgets_values": [
+        "Seedance 2.5",
+        "## Subject\n\nA highly detailed miniature **white Porsche 911 GT3 RS** model car, matching the supplied eight-view vehicle turnaround sheet exactly.\n\n**Reference definitions:**\n\n- **`image_1` — Porsche miniature on train windowsill:** The definitive reference for the opening scene after the man's hand places the car down. Match the exact rear-left three-quarter camera angle, model-car position, glossy cream-white windowsill, large train window, warm golden lighting, and softly blurred green countryside outside.\n\n- **`image_2` — Porsche 911 GT3 RS turnaround sheet:** The definitive vehicle identity reference throughout the entire video. Preserve the exact white bodywork, black carbon-fiber hood and aerodynamic accents, black multi-spoke wheels, yellow brake calipers, large black rear wing, side vents, black front splitter, rear diffuser, dual central exhausts, and GT3 RS side graphics. Every version of the car must be identical to this reference, with only its physical scale changing during the transition.\n\nThe car begins as a realistic miniature Porsche GT3 RS being placed on the windowsill of a moving passenger train.\n\nThe train interior features warm amber and golden-hour lighting, subtle greenish shadows, cream-colored wall panels, and a wide panoramic window.\n\nThe miniature eventually transforms into a full-sized, photorealistic Porsche 911 GT3 RS driving through a real road tunnel before emerging into a **nighttime city environment filled with beautiful city lights**.\n\nThe vehicle must remain the exact same Porsche GT3 RS throughout. No changes in model, color, aerodynamic components, wheels, or proportions.\n\n## Action\n\n**Total duration: exactly 10 seconds.**\n\n**0.0–2.0s — Man places miniature Porsche on the windowsill**  \nBegin from the exact low rear-left three-quarter angle shown in `image_2`.\n\nA man's hand enters the frame holding the miniature white Porsche 911 GT3 RS from `image_1`.\n\nHe carefully lowers the model onto the broad cream-white train windowsill.\n\nThe miniature's front faces toward the right side of the frame, while its rear bumper, large rear wing, left side, and black wheels remain visible.\n\nThe wheels gently contact the glossy windowsill. The man's fingers release the miniature naturally, and his hand withdraws from the frame.\n\nAs soon as the hand withdraws, the composition must match `image_2` exactly.\n\nOutside the large train window, green trees and countryside blur past in warm golden-hour sunlight.\n\nSubtle reflections from the moving landscape travel across the windowsill and the miniature's glossy white bodywork.\n\nThe camera remains completely locked in position throughout the placement.\n\n**2.0–4.0s — Train approaches and enters a real tunnel**  \nThe miniature Porsche remains stationary on the windowsill in precisely the composition established by `image_2`.\n\nThe train continues moving forward.\n\nOutside the window, the sunlit countryside passes rapidly.\n\nA real railway tunnel approaches, and the passing landscape gradually gives way to the tunnel entrance.\n\nAs the train enters the tunnel, warm daylight falls away.\n\nDark tunnel walls pass outside the glass, and reflections from overhead tunnel fixtures move across the Porsche's white paint, black carbon-fiber surfaces, and rear wing.\n\nThe camera remains fully locked in place.\n\nThe car must not slide, rotate, enlarge, or move on the windowsill.\n\nThe transition begins only once the train is physically inside the tunnel.\n\n**4.0–6.5s — Seamless miniature-to-real transformation inside the tunnel**  \nInside the darkness of the railway tunnel, the miniature Porsche transitions into a full-sized, real Porsche 911 GT3 RS.\n\nThe transformation must preserve the exact vehicle from `image_1`.\n\nUse the darkness of the tunnel as a natural, continuous visual transition.\n\nAs the train's window view becomes obscured by darkness and moving reflections, the surrounding windowsill and train interior gradually disappear from visibility.\n\nWithin this dark interval, the physical context changes from a miniature resting on the windowsill to a full-sized vehicle driving on asphalt inside a real road tunnel.\n\nThe Porsche itself does not visibly stretch, morph, melt, or grow.\n\nIts original silhouette, rear wing, roofline, wheels, taillights, side graphics, and rear diffuser remain visually consistent as the new environment emerges.\n\nThe white windowsill surface gives way to dark asphalt beneath the tires.\n\nThe model's stationary wheels transition into naturally rotating full-sized wheels.\n\nRealistic suspension movement becomes visible as the Porsche drives forward.\n\nOverhead road-tunnel lights create moving highlights across the white bodywork and carbon-fiber components.\n\nThe camera perspective transitions seamlessly from the original locked rear-left three-quarter framing into a matching rear-left three-quarter vehicle-tracking view.\n\nThe tunnel-road environment should already feel like **nighttime**, with darkness outside the reach of the tunnel lighting.\n\n**6.5–8.5s — Full-sized Porsche driving through the tunnel at night**  \nThe Porsche is now completely full-sized, photorealistic, and traveling forward through a real road tunnel.\n\nIt remains identical to the vehicle shown in `image_1`.\n\nIts large black rear wing, white body, carbon-fiber hood, side graphics, yellow brake calipers, and black wheels remain completely consistent.\n\nThe camera holds the same rear-left three-quarter perspective established in the opening.\n\nThe Porsche accelerates naturally.\n\nIts tires rotate with believable contact against the asphalt, the suspension responds subtly to road movement, and overhead tunnel lighting moves rhythmically across the body panels.\n\nTunnel walls and road markings pass in the background with physically accurate motion parallax.\n\nThe tunnel lighting behavior stays exactly as already established.\n\nOutside the tunnel environment, it is now fully nighttime.\n\n**8.5–10.0s — Porsche exits into a nighttime city view**  \nThe full-sized Porsche approaches the tunnel exit.\n\nInstead of daytime, the car emerges directly into **nighttime**.\n\nAs it comes out of the tunnel, it is greeted by **beautiful city lights** — glowing urban light clusters, illuminated roads, warm building lights, and a striking nighttime city atmosphere.\n\nThe environment outside the tunnel should feel expansive, cinematic, and visually beautiful, with a clear sense of entering a lit urban nightscape.\n\nThe road remains realistic and grounded, with city illumination reflecting softly across the Porsche's white bodywork and black aerodynamic surfaces.\n\nThe camera continues following the Porsche from the same rear-left three-quarter perspective.\n\nEnd with the real Porsche GT3 RS driving forward into the nighttime city environment, surrounded by beautiful city lights.\n\n## Camera\n\nThe opening camera must be completely locked off and must match `image_2`.\n\nStart from a low rear-left three-quarter close-up, positioned just above the train windowsill and looking slightly downward toward the miniature Porsche.\n\nThe Porsche's rear wing, left side, rear bumper, and left wheels must remain visible.\n\nThe front of the car points toward the right side of the image.\n\nThe camera remains stationary while the man's hand enters, sets down the car, releases it, and leaves.\n\nThe resulting composition must visually reproduce `image_2`, including the car's screen position, orientation, scale, windowsill perspective, and visible window frame.\n\nDuring the entire train-window sequence, the camera must not move.\n\nNo slow push-in, zoom, dolly, pan, tilt, orbit, or reframing.\n\nThe sense of motion comes entirely from the passing scenery outside the train, changing reflections, and subtle environmental vibration.\n\nDuring the tunnel transformation, preserve the Porsche's position, silhouette, and rear-left three-quarter perspective.\n\nOnce the car has become full-sized, transition into a smooth automotive tracking shot with the same viewing angle and consistent screen direction.\n\nMaintain spatial continuity from the locked miniature composition into the moving tunnel-driving shot.\n\nNo front-facing angles, aerial shots, angle reversals, or abrupt camera jumps.\n\nThe transition must feel like one continuous cinematic movement.\n\n## Style\n\nPhotorealistic golden-hour-to-night automotive cinematography.\n\nUse `image_2` as the definitive reference for the opening lighting, atmosphere, color grading, reflections, and composition.\n\nThe opening train interior features warm amber sunlight, subtle green-tinted shadows, cream-white surfaces, and soft reflections.\n\nOutside the train window, blurred trees and countryside have a warm golden-yellow and muted forest-green appearance.\n\nThe miniature Porsche should look like a real, high-quality physical scale model photographed close-up.\n\nPreserve small-scale paint reflections, realistic miniature tires, detailed aerodynamic surfaces, and subtle material imperfections.\n\nThe windowsill has a smooth, glossy cream-white surface with soft golden reflections.\n\nDuring the tunnel sequence, golden daylight transitions naturally into darkness, followed by convincing overhead tunnel lighting.\n\nOnce the full-sized Porsche is on the road, the scene is effectively nighttime.\n\nWhen the Porsche exits the tunnel, the exterior world is a beautiful night city scene with glowing lights, illuminated roads, and rich urban ambience.\n\nReflections from city lights should play subtly and realistically across the car's white paint, black carbon-fiber hood, side surfaces, rear wing, and windows.\n\nMaintain realistic exposure changes, depth of field, motion blur, and foreground-to-background parallax.\n\nNo exaggerated CGI effects or artificial transformation glow.\n\n## Constraints\n\n- **Duration:** Exactly 10 seconds total.\n- **0.0–2.0s:** Man places the miniature Porsche onto the windowsill.\n- **2.0–4.0s:** Train approaches and enters the railway tunnel.\n- **4.0–6.5s:** Seamless transition inside the tunnel.\n- **6.5–8.5s:** Full-sized Porsche drives through the road tunnel at night.\n- **8.5–10.0s:** Porsche exits into a nighttime city environment with beautiful city lights.\n\n- **Vehicle identity:** `image_1` is the definitive vehicle reference. The car must always be the exact same white Porsche 911 GT3 RS. Preserve the black carbon-fiber hood, black multi-spoke wheels, yellow brake calipers, oversized black rear wing, side graphics, vents, front splitter, and rear diffuser. Preserve the same Porsche identity when transforming from miniature to full-sized. No substitutions or invented design changes. No invented license-plate text.\n\n- **Opening composition:** `image_2` controls the exact opening placement angle and composition. The car must be placed on the windowsill from the rear-left three-quarter view. The man lowers the miniature naturally and withdraws his hand. Once placed, the car's position and framing must match `image_2`. The camera remains completely locked off throughout the entire train-window sequence. No push-in, zoom, pan, tilt, camera drift, or reframing.\n\n- **Tunnel transformation:** The moving passenger train must enter a real railway tunnel. The transformation must happen only while inside the tunnel. The miniature becomes a real Porsche driving inside a road tunnel. The model's silhouette and vehicle identity must remain visually stable throughout the transition. No visible car stretching, growing, dissolving, melting, or warping. Use tunnel darkness and matching visual geometry to conceal the scale change. Maintain consistent forward direction and rear-left three-quarter perspective. No abrupt jumps or visibly disconnected environments.\n\n- **Ending change:** The road-tunnel portion remains dark and naturally lit by tunnel fixtures. When the Porsche exits the tunnel, it must **not** emerge into daylight. It must emerge into **nighttime**, with a beautiful city-light view already present outside the tunnel.\n\n- **Environmental interaction:** The miniature's wheels make natural contact with the windowsill. The man's fingers release the model with believable weight and motion. Exterior scenery moves past the train window with realistic parallax. Tunnel entry causes natural changes in ambient lighting and reflections. The full-sized vehicle's tires interact with asphalt and show realistic rotation. Road-tunnel lights create consistent moving reflections across the Porsche. Nighttime city lights illuminate the final exterior environment naturally.\n\n- **Negative prompts:** No altered Porsche model, no changed wheel design, no changing rear wing, no mismatched body panels, no color changes, no floating car, no sliding miniature, no distorted hands, no detached fingers, no visible size morphing, no melting geometry, no stretched tires, no unrealistic wheel rotation, no duplicated vehicles, no additional cars, no people visible after the man's hand withdraws, no camera zoom during placement, no camera push-in during the train sequence, no camera orbit, no sudden angle change, no front-facing tracking shot, no jump cuts, no exaggerated CGI effects, no artificial transition glow, no subtitles, no captions, no text overlays, and no rendering artifacts.\n\nHighest-priority instruction: `image_1` controls the exact identity and appearance of the white Porsche 911 GT3 RS throughout the entire 10-second sequence. `image_2` controls the exact opening camera angle, miniature placement, windowsill environment, and warm golden-hour appearance. The man's hand places the miniature Porsche onto the windowsill, then withdraws, leaving the car in precisely the composition shown in `image_2`. The camera remains completely locked off while the train approaches and enters a real tunnel. Inside the tunnel, the miniature seamlessly becomes the exact same full-sized Porsche GT3 RS driving through a road tunnel at night. The car then exits into a beautiful nighttime city-light environment, maintaining consistent design, orientation, and rear-left three-quarter perspective throughout.",
+        "720p",
+        "16:9",
+        10,
+        true,
+        "reference",
+        "mp4",
+        true,
+        false,
+        1065076691,
+        "randomize",
+        false
+      ],
+      "widgets_values_named": {
+        "model": "Seedance 2.5",
+        "model.prompt": "## Subject\n\nA highly detailed miniature **white Porsche 911 GT3 RS** model car, matching the supplied eight-view vehicle turnaround sheet exactly.\n\n**Reference definitions:**\n\n- **`image_1` — Porsche miniature on train windowsill:** The definitive reference for the opening scene after the man's hand places the car down. Match the exact rear-left three-quarter camera angle, model-car position, glossy cream-white windowsill, large train window, warm golden lighting, and softly blurred green countryside outside.\n\n- **`image_2` — Porsche 911 GT3 RS turnaround sheet:** The definitive vehicle identity reference throughout the entire video. Preserve the exact white bodywork, black carbon-fiber hood and aerodynamic accents, black multi-spoke wheels, yellow brake calipers, large black rear wing, side vents, black front splitter, rear diffuser, dual central exhausts, and GT3 RS side graphics. Every version of the car must be identical to this reference, with only its physical scale changing during the transition.\n\nThe car begins as a realistic miniature Porsche GT3 RS being placed on the windowsill of a moving passenger train.\n\nThe train interior features warm amber and golden-hour lighting, subtle greenish shadows, cream-colored wall panels, and a wide panoramic window.\n\nThe miniature eventually transforms into a full-sized, photorealistic Porsche 911 GT3 RS driving through a real road tunnel before emerging into a **nighttime city environment filled with beautiful city lights**.\n\nThe vehicle must remain the exact same Porsche GT3 RS throughout. No changes in model, color, aerodynamic components, wheels, or proportions.\n\n## Action\n\n**Total duration: exactly 10 seconds.**\n\n**0.0–2.0s — Man places miniature Porsche on the windowsill**  \nBegin from the exact low rear-left three-quarter angle shown in `image_2`.\n\nA man's hand enters the frame holding the miniature white Porsche 911 GT3 RS from `image_1`.\n\nHe carefully lowers the model onto the broad cream-white train windowsill.\n\nThe miniature's front faces toward the right side of the frame, while its rear bumper, large rear wing, left side, and black wheels remain visible.\n\nThe wheels gently contact the glossy windowsill. The man's fingers release the miniature naturally, and his hand withdraws from the frame.\n\nAs soon as the hand withdraws, the composition must match `image_2` exactly.\n\nOutside the large train window, green trees and countryside blur past in warm golden-hour sunlight.\n\nSubtle reflections from the moving landscape travel across the windowsill and the miniature's glossy white bodywork.\n\nThe camera remains completely locked in position throughout the placement.\n\n**2.0–4.0s — Train approaches and enters a real tunnel**  \nThe miniature Porsche remains stationary on the windowsill in precisely the composition established by `image_2`.\n\nThe train continues moving forward.\n\nOutside the window, the sunlit countryside passes rapidly.\n\nA real railway tunnel approaches, and the passing landscape gradually gives way to the tunnel entrance.\n\nAs the train enters the tunnel, warm daylight falls away.\n\nDark tunnel walls pass outside the glass, and reflections from overhead tunnel fixtures move across the Porsche's white paint, black carbon-fiber surfaces, and rear wing.\n\nThe camera remains fully locked in place.\n\nThe car must not slide, rotate, enlarge, or move on the windowsill.\n\nThe transition begins only once the train is physically inside the tunnel.\n\n**4.0–6.5s — Seamless miniature-to-real transformation inside the tunnel**  \nInside the darkness of the railway tunnel, the miniature Porsche transitions into a full-sized, real Porsche 911 GT3 RS.\n\nThe transformation must preserve the exact vehicle from `image_1`.\n\nUse the darkness of the tunnel as a natural, continuous visual transition.\n\nAs the train's window view becomes obscured by darkness and moving reflections, the surrounding windowsill and train interior gradually disappear from visibility.\n\nWithin this dark interval, the physical context changes from a miniature resting on the windowsill to a full-sized vehicle driving on asphalt inside a real road tunnel.\n\nThe Porsche itself does not visibly stretch, morph, melt, or grow.\n\nIts original silhouette, rear wing, roofline, wheels, taillights, side graphics, and rear diffuser remain visually consistent as the new environment emerges.\n\nThe white windowsill surface gives way to dark asphalt beneath the tires.\n\nThe model's stationary wheels transition into naturally rotating full-sized wheels.\n\nRealistic suspension movement becomes visible as the Porsche drives forward.\n\nOverhead road-tunnel lights create moving highlights across the white bodywork and carbon-fiber components.\n\nThe camera perspective transitions seamlessly from the original locked rear-left three-quarter framing into a matching rear-left three-quarter vehicle-tracking view.\n\nThe tunnel-road environment should already feel like **nighttime**, with darkness outside the reach of the tunnel lighting.\n\n**6.5–8.5s — Full-sized Porsche driving through the tunnel at night**  \nThe Porsche is now completely full-sized, photorealistic, and traveling forward through a real road tunnel.\n\nIt remains identical to the vehicle shown in `image_1`.\n\nIts large black rear wing, white body, carbon-fiber hood, side graphics, yellow brake calipers, and black wheels remain completely consistent.\n\nThe camera holds the same rear-left three-quarter perspective established in the opening.\n\nThe Porsche accelerates naturally.\n\nIts tires rotate with believable contact against the asphalt, the suspension responds subtly to road movement, and overhead tunnel lighting moves rhythmically across the body panels.\n\nTunnel walls and road markings pass in the background with physically accurate motion parallax.\n\nThe tunnel lighting behavior stays exactly as already established.\n\nOutside the tunnel environment, it is now fully nighttime.\n\n**8.5–10.0s — Porsche exits into a nighttime city view**  \nThe full-sized Porsche approaches the tunnel exit.\n\nInstead of daytime, the car emerges directly into **nighttime**.\n\nAs it comes out of the tunnel, it is greeted by **beautiful city lights** — glowing urban light clusters, illuminated roads, warm building lights, and a striking nighttime city atmosphere.\n\nThe environment outside the tunnel should feel expansive, cinematic, and visually beautiful, with a clear sense of entering a lit urban nightscape.\n\nThe road remains realistic and grounded, with city illumination reflecting softly across the Porsche's white bodywork and black aerodynamic surfaces.\n\nThe camera continues following the Porsche from the same rear-left three-quarter perspective.\n\nEnd with the real Porsche GT3 RS driving forward into the nighttime city environment, surrounded by beautiful city lights.\n\n## Camera\n\nThe opening camera must be completely locked off and must match `image_2`.\n\nStart from a low rear-left three-quarter close-up, positioned just above the train windowsill and looking slightly downward toward the miniature Porsche.\n\nThe Porsche's rear wing, left side, rear bumper, and left wheels must remain visible.\n\nThe front of the car points toward the right side of the image.\n\nThe camera remains stationary while the man's hand enters, sets down the car, releases it, and leaves.\n\nThe resulting composition must visually reproduce `image_2`, including the car's screen position, orientation, scale, windowsill perspective, and visible window frame.\n\nDuring the entire train-window sequence, the camera must not move.\n\nNo slow push-in, zoom, dolly, pan, tilt, orbit, or reframing.\n\nThe sense of motion comes entirely from the passing scenery outside the train, changing reflections, and subtle environmental vibration.\n\nDuring the tunnel transformation, preserve the Porsche's position, silhouette, and rear-left three-quarter perspective.\n\nOnce the car has become full-sized, transition into a smooth automotive tracking shot with the same viewing angle and consistent screen direction.\n\nMaintain spatial continuity from the locked miniature composition into the moving tunnel-driving shot.\n\nNo front-facing angles, aerial shots, angle reversals, or abrupt camera jumps.\n\nThe transition must feel like one continuous cinematic movement.\n\n## Style\n\nPhotorealistic golden-hour-to-night automotive cinematography.\n\nUse `image_2` as the definitive reference for the opening lighting, atmosphere, color grading, reflections, and composition.\n\nThe opening train interior features warm amber sunlight, subtle green-tinted shadows, cream-white surfaces, and soft reflections.\n\nOutside the train window, blurred trees and countryside have a warm golden-yellow and muted forest-green appearance.\n\nThe miniature Porsche should look like a real, high-quality physical scale model photographed close-up.\n\nPreserve small-scale paint reflections, realistic miniature tires, detailed aerodynamic surfaces, and subtle material imperfections.\n\nThe windowsill has a smooth, glossy cream-white surface with soft golden reflections.\n\nDuring the tunnel sequence, golden daylight transitions naturally into darkness, followed by convincing overhead tunnel lighting.\n\nOnce the full-sized Porsche is on the road, the scene is effectively nighttime.\n\nWhen the Porsche exits the tunnel, the exterior world is a beautiful night city scene with glowing lights, illuminated roads, and rich urban ambience.\n\nReflections from city lights should play subtly and realistically across the car's white paint, black carbon-fiber hood, side surfaces, rear wing, and windows.\n\nMaintain realistic exposure changes, depth of field, motion blur, and foreground-to-background parallax.\n\nNo exaggerated CGI effects or artificial transformation glow.\n\n## Constraints\n\n- **Duration:** Exactly 10 seconds total.\n- **0.0–2.0s:** Man places the miniature Porsche onto the windowsill.\n- **2.0–4.0s:** Train approaches and enters the railway tunnel.\n- **4.0–6.5s:** Seamless transition inside the tunnel.\n- **6.5–8.5s:** Full-sized Porsche drives through the road tunnel at night.\n- **8.5–10.0s:** Porsche exits into a nighttime city environment with beautiful city lights.\n\n- **Vehicle identity:** `image_1` is the definitive vehicle reference. The car must always be the exact same white Porsche 911 GT3 RS. Preserve the black carbon-fiber hood, black multi-spoke wheels, yellow brake calipers, oversized black rear wing, side graphics, vents, front splitter, and rear diffuser. Preserve the same Porsche identity when transforming from miniature to full-sized. No substitutions or invented design changes. No invented license-plate text.\n\n- **Opening composition:** `image_2` controls the exact opening placement angle and composition. The car must be placed on the windowsill from the rear-left three-quarter view. The man lowers the miniature naturally and withdraws his hand. Once placed, the car's position and framing must match `image_2`. The camera remains completely locked off throughout the entire train-window sequence. No push-in, zoom, pan, tilt, camera drift, or reframing.\n\n- **Tunnel transformation:** The moving passenger train must enter a real railway tunnel. The transformation must happen only while inside the tunnel. The miniature becomes a real Porsche driving inside a road tunnel. The model's silhouette and vehicle identity must remain visually stable throughout the transition. No visible car stretching, growing, dissolving, melting, or warping. Use tunnel darkness and matching visual geometry to conceal the scale change. Maintain consistent forward direction and rear-left three-quarter perspective. No abrupt jumps or visibly disconnected environments.\n\n- **Ending change:** The road-tunnel portion remains dark and naturally lit by tunnel fixtures. When the Porsche exits the tunnel, it must **not** emerge into daylight. It must emerge into **nighttime**, with a beautiful city-light view already present outside the tunnel.\n\n- **Environmental interaction:** The miniature's wheels make natural contact with the windowsill. The man's fingers release the model with believable weight and motion. Exterior scenery moves past the train window with realistic parallax. Tunnel entry causes natural changes in ambient lighting and reflections. The full-sized vehicle's tires interact with asphalt and show realistic rotation. Road-tunnel lights create consistent moving reflections across the Porsche. Nighttime city lights illuminate the final exterior environment naturally.\n\n- **Negative prompts:** No altered Porsche model, no changed wheel design, no changing rear wing, no mismatched body panels, no color changes, no floating car, no sliding miniature, no distorted hands, no detached fingers, no visible size morphing, no melting geometry, no stretched tires, no unrealistic wheel rotation, no duplicated vehicles, no additional cars, no people visible after the man's hand withdraws, no camera zoom during placement, no camera push-in during the train sequence, no camera orbit, no sudden angle change, no front-facing tracking shot, no jump cuts, no exaggerated CGI effects, no artificial transition glow, no subtitles, no captions, no text overlays, and no rendering artifacts.\n\nHighest-priority instruction: `image_1` controls the exact identity and appearance of the white Porsche 911 GT3 RS throughout the entire 10-second sequence. `image_2` controls the exact opening camera angle, miniature placement, windowsill environment, and warm golden-hour appearance. The man's hand places the miniature Porsche onto the windowsill, then withdraws, leaving the car in precisely the composition shown in `image_2`. The camera remains completely locked off while the train approaches and enters a real tunnel. Inside the tunnel, the miniature seamlessly becomes the exact same full-sized Porsche GT3 RS driving through a road tunnel at night. The car then exits into a beautiful nighttime city-light environment, maintaining consistent design, orientation, and rear-left three-quarter perspective throughout.",
+        "model.resolution": "720p",
+        "model.ratio": "16:9",
+        "model.duration": 10,
+        "model.generate_audio": true,
+        "model.task_type": "reference",
+        "model.output_format": "mp4",
+        "model.auto_downscale": true,
+        "model.auto_upscale": false,
+        "seed": 1065076691,
+        "control_after_generate": "randomize",
+        "watermark": false
+      },
+      "color": "#432",
+      "bgcolor": "#653"
+    },
+    {
+      "id": 32,
+      "type": "LoadImage",
+      "pos": [
+        -102.32423046080343,
+        8221.875565026494
+      ],
+      "size": [
+        289.98333740234375,
+        349.98333740234375
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            33
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": []
+        }
+      ],
+      "title": "Load Image (train-windowsill.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "train-windowsill.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "564654.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 37,
+      "type": "LoadImage",
+      "pos": [
+        226.1793401124823,
+        8234.94147372379
+      ],
+      "size": [
+        282.48148345947266,
+        102
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            40
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "title": "Load Image (porsche-turnaround.png)",
+      "properties": {
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "porsche-turnaround.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "car.png",
+        "upload": "image"
+      }
+    }
+  ],
+  "links": [
+    [
+      19,
+      24,
+      0,
+      16,
+      0,
+      "VIDEO"
+    ],
+    [
+      33,
+      32,
+      0,
+      24,
+      0,
+      "IMAGE"
+    ],
+    [
+      40,
+      37,
+      0,
+      24,
+      1,
+      "IMAGE"
+    ]
+  ],
+  "groups": [
+    {
+      "id": 1,
+      "title": "Reference Images",
+      "bounding": [
+        -134.7136579599292,
+        8132.851014065321,
+        705.6056081522223,
+        485.1231613667096
+      ],
+      "color": "#3f789e",
+      "flags": {}
+    }
+  ],
+  "config": {},
+  "extra": {
+    "VHS_KeepIntermediate": true,
+    "VHS_MetadataImage": true,
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "ds": {
+      "scale": 0.9389751833743339,
+      "offset": [
+        337.3033750570757,
+        -7992.878298800662
+      ]
+    },
+    "frontendVersion": "1.60.0"
+  },
+  "version": 0.4
+}

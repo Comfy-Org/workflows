@@ -50,7 +50,6 @@ An 18-second vertical anime Halloween short in which one character changes costu
 | [media/zombies.png](media/zombies.png) | `image_6`. The zombies. |
 | [media/truck.png](media/truck.png) | `image_7`. The white box truck. |
 | [media/halloween-blockout-18s.mp4](media/halloween-blockout-18s.mp4) | `video_1`. The 18-second 3D blockout. |
-| `media/screenshot-*.png` | Screenshots for this README. Not Workflow inputs. |
 
 ## 03 · Run on Comfy Cloud
 
@@ -60,17 +59,19 @@ An 18-second vertical anime Halloween short in which one character changes costu
 | Run | Click **Run**. The inputs are already loaded. |
 | Cost | Seedance 2.5 is a Partner Node, so each run spends Comfy Credits. At these settings, the Node estimates about 1,258 credits per run. |
 
-**Caution:** Before you run, check the credit estimate above the Partner Node. It changes with duration and resolution.
+> [!CAUTION]
+> Before you run, check the credit estimate above the Partner Node. It changes with duration and resolution.
 
 ## 04 · Run on Comfy Desktop or a local ComfyUI
 
 This is the same Workflow as the Cloud version, but you supply the input files.
 
-**Note:** Seedance 2.5 is a Partner Node. It runs on ByteDance's servers, so you don't need a GPU. When ComfyUI runs on your machine, the Node still sends the job to ByteDance through Comfy and spends Comfy Credits. To run on your own GPU, replace the Node with an open video model that supports reference inputs and fits in your VRAM.
+> [!NOTE]
+> Seedance 2.5 is a Partner Node. It runs on ByteDance's servers, so you don't need a GPU. When ComfyUI runs on your machine, the Node still sends the job to ByteDance through Comfy and spends Comfy Credits. To run on your own GPU, replace the Node with an open video model that supports reference inputs and fits in your VRAM.
 
 | Step | What to do |
 | --- | --- |
-| Requirements | Comfy Desktop, or ComfyUI with frontend 1.58.0, the version this Workflow was saved with. No GPU. A Comfy account with Comfy Credits. |
+| Requirements | Comfy Desktop, or ComfyUI with frontend 1.60.0, the version this Workflow was saved with. No GPU. A Comfy account with Comfy Credits. |
 | Custom Nodes | None. |
 | Models | None. |
 | Get the files | Download this folder. On GitHub, select **Code > Download ZIP** to get the whole repo, or download each file in `media/`. |

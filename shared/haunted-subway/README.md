@@ -56,13 +56,15 @@ A 21-second first-person horror short in a 1985 New York subway car. Seedance 2.
 | Run | Click **Run**. The inputs are already loaded. |
 | Cost | Seedance 2.5 is a Partner Node, so each run spends Comfy Credits. At these settings, the Node estimates 878 to 2,129 credits per run. |
 
-**Caution:** Before you run, check the credit estimate above the Partner Node. It changes with duration and resolution.
+> [!CAUTION]
+> Before you run, check the credit estimate above the Partner Node. It changes with duration and resolution.
 
 ## 04 · Run on Comfy Desktop or a local ComfyUI
 
 This is the same Workflow as the Cloud version, but you supply the input files.
 
-**Note:** Seedance 2.5 is a Partner Node. It runs on ByteDance's servers, so you don't need a GPU. When ComfyUI runs on your machine, the Node still sends the job to ByteDance through Comfy and spends Comfy Credits. To run on your own GPU, replace the Node with an open video model that supports reference inputs and fits in your VRAM.
+> [!NOTE]
+> Seedance 2.5 is a Partner Node. It runs on ByteDance's servers, so you don't need a GPU. When ComfyUI runs on your machine, the Node still sends the job to ByteDance through Comfy and spends Comfy Credits. To run on your own GPU, replace the Node with an open video model that supports reference inputs and fits in your VRAM.
 
 | Step | What to do |
 | --- | --- |
